@@ -1,8 +1,6 @@
 A responsive mobile shop landing page built with modern front-end technologies. This project focuses on creating a clean, user-friendly interface with responsive layouts, interactive components, and a smooth shopping experience.
 
-🚀 Live Demo
 
-🔗 https://helia-rz79.github.io/mobile-shop/
 
 🛠️ Technologies Used
 HTML5
