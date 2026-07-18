@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <main class="w-full min-h-screen bg-gray-100 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
+    <section class="bg-transparent container mx-auto">
+         <!-- header -->
+        <header class="w-full min-h-32 border-b-2 border-neutral-300 pb-3 sm:pb-5">
+            <section class="lg:hidden">
+                <div class="bg-[#E6D1E0] w-full h-10 flex items-center justify-between rounded-lg py-2 sm:py-3 px-4 sm:px-6">
+                    <div class="flex items-center gap-2 sm:gap-3 text-sm sm:text-xl">
+                        <span class="material-symbols-outlined text-[#910F74] text-base sm:text-xl">phone_in_talk</span>
+                        <span class="text-xs sm:text-sm ">
+                            پشتیانی 24 ساعته
+                        </span>
+                    </div>
+                    <p class="font-bold text-base sm:text-xl">۹۰۰۰۱۶۹۰</p>
+                </div>
+                <div class="flex justify-between mt-3 sm:mt-4 p-2">
+                    <div class="w-2/4 flex gap-3 sm:gap-5 items-center">
+                        <div class="border-2 border-neutral-300 flex justify-center items-center w-10 h-10 sm:w-16 sm:h-16 rounded-lg flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </div>
+                        <img src="/src/img/logo.png" alt="logo" class="h-8 sm:h-auto">
+                    </div>
+                    <div class="w-1/4 flex gap-2 sm:gap-3 justify-end">
+                        <span class="border-2 border-neutral-300 flex justify-center items-center w-10 h-10 sm:w-16 sm:h-16 rounded-lg flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </span>
+                        <span class="border-2 border-neutral-300 flex justify-center items-center w-10 h-10 sm:w-16 sm:h-16 rounded-lg flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden lg:flex flex-wrap">
+                <div class="w-full flex justify-between items-center">
+                    <div class="w-2/4 flex gap-5 items-center h-full">
+                        <figure class="flex h-9">
+                            <img class="flex" src="/src/img/logo.png" alt="">
+                        </figure>
+                        <div class="w-2/3 bg-white flex justify-between items-center p-3 pl-2 rounded-lg h-12">
+                            <input class="placeholder:text-[14px] w-full" type="text" placeholder="جستجو ...">
+                            <span class="bg-gray-100 p-1.5 rounded-lg my-1 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                   
+                    <div class="flex gap-2 *:bg-white *:gap-1 *:p-3 *:rounded-lg *:h-12">
+                        <div class="flex items-center *:text-[13px] whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </span>
+                            <span>ورود / ثبت نام</span>
+                        </div>
+                        <div class="flex items-center *:text-[13px] whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </span>
+                            <span>سبد خرید</span>
+                            <span class="bg-green-500 text-white p-1 rounded-md w-6 h-6.5 flex justify-center items-center mr-2">۲</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-16 flex items-center justify-between mt-10">
+                    <ul class="lg:w-4/5 h-full flex items-center gap-5 xl:gap-8 *:text-[13px] overflow-x-auto cursor-pointer">
+                        <li class="flex items-center gap-4 bg-[#910F74] text-white rounded-lg px-5 font-bold h-11 flex-shrink-0">
+                            <span>دسته بندی ها</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="size-3">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-x-1 h-full whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+                            </span>
+                            <span class="flex items-center">صفحه اصلی</span>
+                        </li>
+                        <li class="flex items-center gap-1 h-full whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                                </svg>
+                            </span>
+                            مقالات و بلاگ
+                        </li>
+                        <li class="flex items-center gap-1 h-full whitespace-nowrap">
+                            <span class="material-symbols-outlined">crown</span>
+                            تخفیف های شگفت انگیز
+                        </li>
+                        <li class="flex items-center gap-1 h-full whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                                </svg>
+                            </span>
+                            سوالات متداول
+                        </li>
+                    </ul>
+                    <div class="lg:w-[22%] xl:w-[18%] bg-[#E6D1E0] h-12 gap-1 flex items-center justify-center rounded-xl p-3 flex-shrink-0">
+                    <div class="flex items-center gap-1 text-[13px] whitespace-nowrap">
+                        <span class="material-symbols-outlined text-[#910F74]">phone_in_talk</span>
+                        <span>
+                            پشتیانی 24 ساعته
+                        </span>
+                    </div>
+                    <p class="font-bold text-[13px] underline decoration-1 decoration-gray-400 decoration-dotted">۹۰۰۰۱۶۹۰</p>
+                </div>
+                </div>
+            </section>
+        </header>
+        <!-- body -->
+        <section class="w-full flex flex-col lg:flex-row gap-2 mt-4 sm:mt-6">
+            <div class="w-full lg:flex-1 lg:min-w-0 rounded-xl overflow-hidden relative h-[450px] lg:h-[430px] bg-cover bg-center bg-no-repeat"
+                style="background-image: url('/src/img/banner.png');">
+                <div class="w-full h-full border-0 pt-6 sm:pt-8 md:pt-10 lg:pt-14 xl:pt-16 2xl:pt-20 lg:pr-6 lg:w-[72%] bg-linear-to-b lg:bg-linear-to-l from-black/100 to-black/0 flex flex-col gap-3 sm:gap-4 lg:gap-5 p-4 sm:p-6 lg:p-3  lg:items-start">
+                    <h4 class="w-full sm:w-[80%] xl:w-[65%] 2xl:w-[50%] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-3xl text-white text-right">با محصولات جدید، تجربه‌ای تازه از خرید داشته باشید</h4>
+                    <p class="w-full text-neutral-200 text-xs sm:text-sm font-bold">محصولات منتخب با بهترین قیمت‌ها و موجودی محدود.<br> قبل از اتمام موجودی، خرید خود را نهایی کنید.</p>
+                    <div class="my-2 w-full flex items-center justify-between gap-5 gap-y-2 md:justify-start lg:items-start lg:flex-col xl:mt-5">
+                        <p class="text-neutral-200 text-xs sm:text-sm lg:text-[12px] lg:w-full ">شارژ موجودی بعدی</p>
+                        <div class="flex gap-1 items-center justify-center lg:justify-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 p-1 sm:p-2 rounded-md bg-white/30 flex items-center justify-center">
+                                <span class="text-white text-sm sm:text-lg font-bold">۴۳</span>
+                            </div>
+                            <span class="text-green-500 text-lg sm:text-xl">:</span>
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 p-1 sm:p-2 rounded-md bg-white/30 flex items-center justify-center">
+                                <span class="text-white text-sm sm:text-lg font-bold">۲۰</span>
+                            </div>
+                            <span class="text-green-500 text-lg sm:text-xl">:</span>
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 p-1 sm:p-2 rounded-md bg-white/30 flex items-center justify-center">
+                                <span class="text-white text-sm sm:text-lg font-bold">۱۵</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex gap-3 items-center justify-center md:justify-start">
+                        <button class="bg-white px-2 sm:px-4 py-3 rounded-lg text-xs font-bold">مشاهده محصولات امروز</button>
+                        <button class="text-white border border-white px-2 sm:px-4 py-3 rounded-lg text-xs font-bold">موجودی روزهای آینده</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-[350px] min-h-[350px] sm:min-h-[400px] lg:min-h-100 mt-2 lg:mt-0">
+                <div class="swiper productSwiper w-full h-full">
+                    <div class="swiper-wrapper cursor-pointer">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl w-full h-full p-3 flex flex-col">
+                                <div class="flex items-center justify-between mb-3 sm:mb-5 lg:mb-1 bg-gray-100 p-2 rounded-lg">
+                                    <h4 class="font-bold text-xs sm:text-[14px]">تخفیفات لحظه‌ای</h4>
+                                    <div class="flex gap-2">
+                                        <button class="prevBtn w-6 h-6 sm:w-7 sm:min-h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </button>
+                                        <button class="nextBtn w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
+                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-8 text-xs sm:text-sm lg:text-[13px] text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[11px] sm:text-xs mt-2 sm:mt-3 text-right font-bold">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <!-- Footer -->
+                                <div class="mt-3 lg:mt-1 mb-3 lg:mb-1 px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base sm:text-lg lg:text-2xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-10 h-10 rounded-lg border-2 border-gray-300 hover:bg-gray-100 transition flex items-center justify-center text-lg lg:text-xl cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                                </svg>
+                                            </button>
+                                            <button class="w-10 h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl w-full h-full p-3 flex flex-col">
+                                <div class="flex items-center justify-between mb-3 sm:mb-5 lg:mb-1 bg-gray-100 p-2 rounded-lg">
+                                    <h4 class="font-bold text-xs sm:text-[14px]">تخفیفات لحظه‌ای</h4>
+                                    <div class="flex gap-2">
+                                        <button class="prevBtn w-6 h-6 sm:w-7 sm:min-h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </button>
+                                        <button class="nextBtn w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
+                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-8 text-xs sm:text-sm lg:text-[13px] text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[11px] sm:text-xs mt-2 sm:mt-3 text-right font-bold">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <!-- Footer -->
+                                <div class="mt-3 lg:mt-1 mb-3 lg:mb-1 px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base sm:text-lg lg:text-2xl">
+                                                ۵۲,۱۹۹,۰۰۰
+                                                <span class="text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-10 h-10 rounded-lg border-2 border-gray-300 hover:bg-gray-100 transition flex items-center justify-center text-lg lg:text-xl cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                                </svg>
+                                            </button>
+                                            <button class="w-10 h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl w-full h-full p-3 flex flex-col">
+                                <div class="flex items-center justify-between mb-3 sm:mb-5 lg:mb-1 bg-gray-100 p-2 rounded-lg">
+                                    <h4 class="font-bold text-xs sm:text-[14px]">تخفیفات لحظه‌ای</h4>
+                                    <div class="flex gap-2">
+                                        <button class="prevBtn w-6 h-6 sm:w-7 sm:min-h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </button>
+                                        <button class="nextBtn w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
+                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto " alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-8 text-xs sm:text-sm lg:text-[13px] text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[11px] sm:text-xs mt-2 sm:mt-3 text-right font-bold">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <!-- Footer -->
+                                <div class="mt-3 lg:mt-1 mb-3 lg:mb-1 px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base sm:text-lg lg:text-2xl">
+                                                ۶۹,۱۹۹,۰۰۰
+                                                <span class="text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-10 h-10 rounded-lg border-2 border-gray-300 hover:bg-gray-100 transition flex items-center justify-center text-lg lg:text-xl cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                                </svg>
+                                            </button>
+                                            <button class="w-10 h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="w-full mt-4 sm:mt-5 lg:my-10 overflow-x-auto">
+            <div class="flex gap-2 sm:gap-3 md:gap-4 justify-start md:justify-between min-w-max md:min-w-0">
+                <div class="w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">mobile</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">موبایل</span>
+                </div>
+                <div class="w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">tablet_android</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">تبلت</span>
+                </div>
+                <div class="w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">laptop_chromebook</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">لپ تاپ</span>
+                </div>
+                <div class="w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">speaker</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[10.5px] font-bold w-full text-center">اسپیکرو ساندبار</span>
+                </div>
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">sports_esports</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">گیمینگ</span>
+                </div>
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">watch_check</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">ساعت هوشمند</span>
+                </div>
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">headphones</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[10px] font-bold w-full text-center">هدفون وهدزفری</span>
+                </div>
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">power</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">لوازم جانبی</span>
+                </div>
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 bg-gray-200 rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                    <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">add_home</span>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">خانه هوشمند</span>
+                </div>
+            </div>
+        </section>
+        <!-- slider 2-->
+        <section class="w-full mt-8 sm:mt-10 lg:mt-16">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between mb-4 sm:mb-6">
+                    <div class="flex gap-2 sm:gap-4 items-center w-full">
+                        <h3 class="text-base sm:text-lg font-bold">موجودی فعال امروز</h3>
+                        <a href="" class="text-[#910F74] text-xs sm:text-sm font-bold">مشاهده همه</a>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="newPrev w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                        <button class="newNext w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper newSwiper w-full overflow-visible h-[250px] sm:h-[290px] lg:h-[350px]">
+                    <div class="swiper-wrapper cursor-pointer">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/iphone16.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max
+                                    </h3>
+                                    <p class="text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/watch.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max
+                                    </h3>
+                                    <p class="text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/tablet.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max
+                                    </h3>
+                                    <p class="text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/phone.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[9px] sm:text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[9px] sm:text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[8px] sm:text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[8px] sm:text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-sm sm:text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[9px] sm:text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[9px] sm:text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[8px] sm:text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[8px] sm:text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-sm sm:text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[9px] sm:text-[10px] lg:text-xs lg:text-right">
+                                        گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA
+                                    </h3>
+                                    <p class="text-[9px] sm:text-[10px] lg:text-xs font-bold mt-1 truncate lg:text-right">
+                                        تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[8px] sm:text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[8px] sm:text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-sm sm:text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-200 rounded-xl p-3 sm:p-4 md:p-6 mt-8 sm:mt-10 lg:mt-12 overflow-hidden">
+            <div class="flex gap-2 sm:gap-4 items-center w-full">
+                <h4 class="font-bold text-base sm:text-lg">رکورد فروش امروز</h4>
+                <a href="" class="text-[#910F74] text-xs sm:text-sm font-bold">مشاهده همه</a>
+            </div>
+            <div class="w-full flex flex-col xl:flex-row gap-2 mt-4 sm:mt-6">
+                <div class="w-full lg:w-auto flex flex-row lg:flex-col gap-2 flex-wrap sm:flex-nowrap">
+                    <div class="bg-gray-100 rounded-lg p-2 sm:p-3 xl:px-5 flex items-start gap-2 sm:gap-3 flex-1 lg:flex-none">
+                        <span class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                            </svg>
+                        </span>
+                        <div class="flex flex-col gap-0.5 sm:gap-1">
+                            <h5 class="text-[#910F74] text-sm font-bold">۳۴ محصول</h5>
+                            <p class="text-[9.5px] sm:text-xs text-black font-normal">امروز به فروش کامل رسید</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-2 sm:p-3 xl:px-5 flex items-start gap-2 sm:gap-3 flex-1 lg:flex-none">
+                        <span class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </span>
+                        <div class="flex flex-col gap-1">
+                            <h5 class="text-[#910F74] text-sm font-bold">۸ ساعت</h5>
+                            <p class="text-[9.5px] sm:text-xs text-black font-normal">میانگین زمان فروش</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full flex flex-col sm:flex-row gap-2 flex-1">
+                    <div class="bg-white py-2 sm:py-3 px-3 sm:px-5 rounded-lg flex flex-1 gap-2 items-center">
+                        <figure class="w-28 h-28 flex items-center flex-shrink-0">
+                            <img src="/src/img/hands.png" alt="" class="w-full h-auto">
+                        </figure>
+                        <div class="flex flex-col gap-0.5 sm:gap-1 pt-1 sm:pt-2 flex-1 min-w-0">
+                            <h6 class="font-bold text-[11px] sm:text-[12px] text-black truncate">هدفون بلوتوثی انکر مدل</h6>
+                            <p class="font-bold text-[11px] sm:text-[12px] text-black truncate">SoundCoreR50iA3949</p>
+                            <span class="mt-1 bg-gray-100 rounded-xl py-0.5 sm:py-1 px-1 sm:px-2 text-black font-normal text-[10px] w-fit">فروش کامل در ۸ ساعت</span>
+                            <div class="flex items-center mt-3 gap-5">
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱.۱ هزار
+                                </p>
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱۵ سفارش
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white py-2 sm:py-3 px-3 sm:px-5 rounded-lg flex flex-1 gap-2 items-center">
+                        <figure class="w-28 h-28 flex items-center flex-shrink-0">
+                            <img src="/src/img/play5.png" alt="" class="w-full h-auto">
+                        </figure>
+                        <div class="flex flex-col gap-0.5 sm:gap-1 pt-1 sm:pt-2 flex-1 min-w-0">
+                            <h6 class="font-bold text-[11px] sm:text-[12px] text-black truncate">هدفون بلوتوثی انکر مدل</h6>
+                            <p class="font-bold text-[11px] sm:text-[12px] text-black truncate">SoundCoreR50iA3949</p>
+                            <span class="mt-1 bg-gray-100 rounded-xl py-0.5 sm:py-1 px-1 sm:px-2 text-black font-normal text-[10px] w-fit">فروش کامل در ۸ ساعت</span>
+                            <div class="flex items-center mt-3 gap-5">
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱.۱ هزار
+                                </p>
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱۵ سفارش
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white py-2 sm:py-3 px-3 sm:px-5 rounded-lg flex flex-1 gap-2 items-center">
+                        <figure class="w-28 h-28 flex items-center flex-shrink-0">
+                            <img src="/src/img/camera.png" alt="" class="w-full h-auto">
+                        </figure>
+                        <div class="flex flex-col gap-0.5 sm:gap-1 pt-1 sm:pt-2 flex-1 min-w-0">
+                            <h6 class="font-bold text-[11px] sm:text-[12px] text-black truncate">هدفون بلوتوثی انکر مدل</h6>
+                            <p class="font-bold text-[11px] sm:text-[12px] text-black truncate">SoundCoreR50iA3949</p>
+                            <span class="mt-1 bg-gray-100 rounded-xl py-0.5 sm:py-1 px-1 sm:px-2 text-black font-normal text-[10px] w-fit">فروش کامل در ۸ ساعت</span>
+                            <div class="flex items-center mt-3 gap-5">
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱.۱ هزار
+                                </p>
+                                <p class="flex text-black font-normal text-[10px] items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-3 sm:size-4 flex-shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    ۱۵ سفارش
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider3 -->
+        <section class="w-full mt-8 sm:mt-10 lg:mt-16 bg-gray-900 rounded-xl p-5">
+            <div class="container mx-auto">
+                <div class="flex flex-col gap-3 md:flex-row items-center justify-center lg:justify-between mb-5">
+                    <div class="flex gap-2 sm:gap-4 items-center w-full justify-center md:justify-start">
+                        <h3 class="text-base sm:text-lg font-bold text-white">به زودی شارژ می شود</h3>
+                        <a href="" class="text-green-500 text-xs sm:text-sm font-bold hidden md:flex">مشاهده همه</a>
+                    </div>
+                    <div class="w-[80%] lg:w-fit flex gap-3 lg:gap-1 items-center justify-center lg:justify-start p-2 bg-white/20 rounded-lg">
+                        <div class="w-10 h-10 p-2 flex flex-col items-center justify-center">
+                            <span class="text-white text-lg font-bold">۳۰</span>
+                            <span class="text-white text-xs">ثانیه</span>
+                        </div>
+                        <span class="text-green-500 text-lg sm:text-xl">:</span>
+                        <div class="w-10 h-10 p-2 flex flex-col items-center justify-center">
+                            <span class="text-white text-lg font-bold">۵۸</span>
+                            <span class="text-white text-xs">دقیقه</span>
+                        </div>
+                        <span class="text-green-500 text-lg sm:text-xl">:</span>
+                        <div class="w-10 h-10 p-2 flex flex-col items-center justify-center">
+                            <span class="text-white text-lg font-bold">۱۶</span>
+                            <span class="text-white text-xs">ساعت</span>
+                        </div>
+                        <span class="text-green-500 text-lg sm:text-xl">:</span>
+                        <div class="w-10 h-10 p-2 flex flex-col items-center justify-center">
+                            <span class="text-white text-lg font-bold">۲</span>
+                            <span class="text-white text-xs">روز</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper blackSwiper w-full overflow-visible h-[280px] sm:h-[300px] lg:h-[350px]">
+                    <div class="swiper-wrapper cursor-pointer">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-2xl w-full h-full p-2 md:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/airpods.png" class="w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right">
+                                        گوشی موبایل اپل مدل Iphone 17Pro Max 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right text-gray-500">
+                                        ۲۱۲ نفر منتظر این کالا هستند
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-1 justify-start items-center">
+                                            <span class="text-[10px] xl:text-[13px] font-bold">از</span>
+                                            <p class="font-bold text-[14px] xl:text-[17px]">
+                                                ۷۲,۱۹۹,۰۰۰ 
+                                            </p>
+                                            <span class="text-[10px] xl:text-[13px] font-bold">تومان</span>
+                                        </div>
+                                        <button class="w-14 h-8 xl:w-16 text-[10px] lg:text-xs font-bold rounded-lg border-[1.5px] border-green-500 text-green-500 hover:bg-green-100 transition flex items-center justify-center cursor-pointer">
+                                            خبرم کن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-2xl w-full h-full p-2 md:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/headphone.png" class="w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right">
+                                        گوشی موبایل اپل مدل Iphone 17Pro Max 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right text-gray-500">
+                                        ۲۱۲ نفر منتظر این کالا هستند
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-1 justify-start items-center">
+                                            <span class="text-[10px] xl:text-[13px] font-bold">از</span>
+                                            <p class="font-bold text-[14px] xl:text-[17px]">
+                                                ۷۲,۱۹۹,۰۰۰ 
+                                            </p>
+                                            <span class="text-[10px] xl:text-[13px] font-bold">تومان</span>
+                                        </div>
+                                        <button class="w-14 h-8 xl:w-16 text-[10px] lg:text-xs font-bold rounded-lg border-[1.5px] border-green-500 text-green-500 hover:bg-green-100 transition flex items-center justify-center cursor-pointer">
+                                            خبرم کن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-2xl w-full h-full p-2 md:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/gold.png" class="w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right">
+                                        گوشی موبایل اپل مدل Iphone 17Pro Max 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right text-gray-500">
+                                        ۲۱۲ نفر منتظر این کالا هستند
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-1 justify-start items-center">
+                                            <span class="text-[10px] xl:text-[13px] font-bold">از</span>
+                                            <p class="font-bold text-[14px] xl:text-[17px]">
+                                                ۷۲,۱۹۹,۰۰۰ 
+                                            </p>
+                                            <span class="text-[10px] xl:text-[13px] font-bold">تومان</span>
+                                        </div>
+                                        <button class="w-14 h-8 xl:w-16 text-[10px] lg:text-xs font-bold rounded-lg border-[1.5px] border-green-500 text-green-500 hover:bg-green-100 transition flex items-center justify-center cursor-pointer">
+                                            خبرم کن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-2xl w-full h-full p-2 md:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/tablet.png" class="w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right">
+                                        گوشی موبایل اپل مدل Iphone 17Pro Max 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right text-gray-500">
+                                        ۲۱۲ نفر منتظر این کالا هستند
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-1 justify-start items-center">
+                                            <span class="text-[10px] xl:text-[13px] font-bold">از</span>
+                                            <p class="font-bold text-[14px] xl:text-[17px]">
+                                                ۷۲,۱۹۹,۰۰۰ 
+                                            </p>
+                                            <span class="text-[10px] xl:text-[13px] font-bold">تومان</span>
+                                        </div>
+                                        <button class="w-14 h-8 xl:w-16 text-[10px] lg:text-xs font-bold rounded-lg border-[1.5px] border-green-500 text-green-500 hover:bg-green-100 transition flex items-center justify-center cursor-pointer">
+                                            خبرم کن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-2xl w-full h-full p-2 md:p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <img src="./src/img/watch.png" class="w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right">
+                                        گوشی موبایل اپل مدل Iphone 17Pro Max 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right text-gray-500">
+                                        ۲۱۲ نفر منتظر این کالا هستند
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-1 justify-start items-center">
+                                            <span class="text-[10px] xl:text-[13px] font-bold">از</span>
+                                            <p class="font-bold text-[14px] xl:text-[17px]">
+                                                ۷۲,۱۹۹,۰۰۰ 
+                                            </p>
+                                            <span class="text-[10px] xl:text-[13px] font-bold">تومان</span>
+                                        </div>
+                                        <button class="w-14 h-8 xl:w-16 text-[10px] lg:text-xs font-bold rounded-lg border-[1.5px] border-green-500 text-green-500 hover:bg-green-100 transition flex items-center justify-center cursor-pointer">
+                                            خبرم کن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="" class="text-green-500 text-sm font-bold md:hidden w-full flex justify-center mt-6">مشاهده همه</a>
+            </div>
+        </section>
+        <section class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-2 xl:gap-5">
+            <div class="lg:flex-1 lg:min-w-0 rounded-xl overflow-hidden relative px-5 sm:px-10 pt-8 h-[300px] md:h-[360px]  bg-cover bg-bottom-right sm:bg-center lg:bg-bottom-right bg-no-repeat"
+                style="background-image: url('/src/img/option1.png');">
+                <div class="flex flex-row md:flex-col justify-between md:gap-1">
+                    <div>
+                        <h4 class="font-bold text-white text-lg sm:text-xl">گوشی های هوشمند</h4>
+                        <p class="text-xs text-gray-200 mt-1">جدیدترین های بازار در دستان شما</p>
+                    </div>
+                    <a href="" class="px-2 h-8 mt-3 bg-white rounded-lg text-[10px] font-bold flex gap-1 items-center w-fit hover:bg-gray-200 duration-200">
+                        مشاهده محصولات
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#4EC74E" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:flex-1 lg:min-w-0 rounded-xl overflow-hidden relative px-5 sm:px-10 pt-8 h-[300px] md:h-[360px]  bg-cover bg-bottom-right sm:bg-center lg:bg-bottom-right bg-no-repeat"
+                style="background-image: url('/src/img/option2.png');">
+                <div class="flex flex-row md:flex-col justify-between md:gap-1">
+                    <div>
+                        <h4 class="font-bold text-white text-lg sm:text-xl">صدایی فراتر ازانتظار</h4>
+                        <p class="text-xs text-gray-200 mt-1">موسیقی، تماس و آزادی حرکت</p>
+                    </div>
+                    <a href="" class="px-2 h-8 mt-3 bg-white rounded-lg text-[10px] font-bold flex gap-1 items-center w-fit hover:bg-gray-200 duration-200">
+                        مشاهده محصولات
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#4EC74E" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:flex-1 lg:min-w-0 rounded-xl overflow-hidden relative px-5 sm:px-10 pt-8 h-[300px] md:h-[360px]  bg-cover bg-bottom-center sm:bg-center lg:bg-bottom-center bg-no-repeat"
+                style="background-image: url('/src/img/option3.png');">
+                <div class="flex flex-row md:flex-col justify-between md:gap-1">
+                    <div>
+                        <h4 class="font-bold text-white text-lg sm:text-xl">نظافت در یک لمس</h4>
+                        <p class="text-xs text-gray-200 mt-1">نظافت روزانه را به فناوری بسپارید</p>
+                    </div>
+                    <a href="" class="px-2 h-8 mt-3 bg-white rounded-lg text-[10px] font-bold flex gap-1 items-center w-fit hover:bg-gray-200 duration-200">
+                        مشاهده محصولات
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#4EC74E" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- slider4 -->
+         <section class="w-full mt-8 sm:mt-10 lg:mt-16">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between mb-4 sm:mb-6">
+                    <div class="flex gap-2 sm:gap-4 items-center w-full">
+                        <h3 class="text-base sm:text-lg font-bold">خریدهای پکیجی</h3>
+                        <a href="" class="text-[#910F74] text-xs sm:text-sm font-bold">مشاهده همه</a>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="packagePrev w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                        <button class="packageNext w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#BCB5C7" class="size-3 sm:size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper packageSwiper w-full overflow-visible h-[300px] lg:h-[360px]">
+                    <div class="swiper-wrapper cursor-pointer">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <div class="w-full flex">
+                                        <img src="./src/img/sam1.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <div class="h-1/2 flex-col items-end gap-y-3">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                        گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right">
+                                        + آداپتور ۳۰۰ واتی + قاب سیلیکونی مشکی
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <div class="w-full flex">
+                                        <img src="./src/img/sam2.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <div class="h-1/2 flex-col items-end gap-y-3">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                        گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right">
+                                        + آداپتور ۳۰۰ واتی + قاب سیلیکونی مشکی
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <div class="w-full flex">
+                                        <img src="./src/img/sam3.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <div class="h-1/2 flex-col items-end gap-y-3">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                        گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right">
+                                        + آداپتور ۳۰۰ واتی + قاب سیلیکونی مشکی
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <div class="w-full flex">
+                                        <img src="./src/img/iphone16.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <div class="h-1/2 flex-col items-end gap-y-3">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                        گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right">
+                                        + آداپتور ۳۰۰ واتی + قاب سیلیکونی مشکی
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
+                                <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
+                                    <div class="w-full flex">
+                                        <img src="./src/img/iphone17.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <div class="h-1/2 flex-col items-end gap-y-3">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
+                                            <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                        گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
+                                    </h3>
+                                    <p class="text-[11px] mt-1 truncate lg:text-right">
+                                        + آداپتور ۳۰۰ واتی + قاب سیلیکونی مشکی
+                                    </p>
+                                </div>
+                                <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
+                                    <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
+                                        <div class="text-right">
+                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
+                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
+                                                    ۲۰%
+                                                </span>
+                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                            </div>
+                                            <p class="font-bold text-base lg:text-xl">
+                                                ۷۲,۱۹۹,۰۰۰
+                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-1 sm:gap-2">
+                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 sm:size-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-gray-200 rounded-xl sm:p-4 md:p-6 mt-8 sm:mt-10 lg:mt-12 overflow-hidden p-4 sm:p-5">
+            <h4 class="text-[15px] sm:text-base md:text-xl font-bold my-3 text-center">چرا همکاران زود سود را انتخاب می کنند؟</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 lg:mt-8 gap-y-5 lg:gap-y-10">
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <span class="material-symbols-outlined">shoppingmode</span>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">قیمت همکاری واقعی</h6>
+                        <p class="text-[10px] text-gray-800">کمترین حاشیه سود برای تامین کنندگان جهت رقابت در بازار</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <span class="material-symbols-outlined">bolt_boost</span>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">موجودی روزانه و سریع</h6>
+                        <p class="text-[10px] text-gray-800">تزریق روزانه جدیدترین کالاهای دیجیتال بازار به انبار</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <span class="material-symbols-outlined">delivery_truck_speed</span>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">ارسال سریع به سراسر کشور</h6>
+                        <p class="text-[10px] text-gray-800">لجستیک اختصاصی جهت ارسال فوری به شهرستان</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <span class="material-symbols-outlined">shopping_basket</span>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">خرید تکی و عمده</h6>
+                        <p class="text-[10px] text-gray-800">امکان سفارش از یک عدد تا تیراژ بالا با حفظ قیمت رقابتی</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <span class="material-symbols-outlined">finance_mode</span>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">محصولات پرفروش بازار</h6>
+                        <p class="text-[10px] text-gray-800">آنالیز و تامین کالاهایی که بیشترین تقاضا را دارد</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg p-1 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset-icon lucide-headset"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-[13px] lg:text-xs mb-1">پشتیبانی ویژه همکاران</h6>
+                        <p class="text-[10px] text-gray-800">مدیر حساب اختصاصی برای همکاران</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full sm:p-4 md:p-6 my-6 mt-10">
+            <div class="grid grid-cols-3 lg:grid-cols-6 gap-1 sm:gap-2">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Bsam.png" alt="">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Bxia.png" alt="">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Bapple.png" alt="">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Brealme.png" alt="">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Bhonor.png" alt="">
+                <img class="bg-white rounded-lg flex justify-center items-center object-cover w-28 h-10 sm:h-12 sm:w-36 xl:w-44 xl:h-14" src="/src/img/Bnokia.png" alt="">
+            </div>
+        </section>
+        <section class="w-full bg-gray-900 p-7 lg:p-10 rounded-xl -mt-7 translate-y-14">
+            <div class="w-full flex flex-col items-center lg:flex-row lg:justify-around gap-6">
+                <div class="flex gap-4 lg:gap-2 items-center flex-col lg:flex-row justify-center">
+                    <span class="bg-white/10 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <h6 class="font-bold text-white mb-2 lg:mb-1 text-center lg:text-right">اولین نفری باشید که مطلع می شود</h6>
+                        <p class=" text-gray-100 text-xs text-center lg:text-right">جدیدترین محصولات، پیشنهادهای ویژه و اخبار فروشگاه را مستقیما در ایمیل خود دریافت کنید.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg flex justify-between">
+                    <input class="placeholder:text-xs p-2 sm:px-4" type="text" name="" id="" placeholder="ایمیلتون رو وارد کنید..">
+                    <button class="bg-green-500 text-white p-2 px-5 rounded-lg text-xs font-bold">عضویت</button>
+                </div>
+            </div>
+        </section>
+    </section>
+  </main>
+   <!-- footer -->
+  <section class="w-full bg-gray-200 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10 pb-4">
+    <div class="bg-transparent container mx-auto mt-10">
+        <!-- section1 -->
+        <div class="border-b-2 border-gray-300 w-full my-7 pt-7 pb-4 flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-between">
+            <div class="w-2/3 lg:w-1/3 order-2 lg:order-1 flex gap-2 items-center justify-center lg:justify-start">
+                <span class="bg-[#E6D1E0] text-[#910F74] p-2 rounded-lg w-9 h-9 flex items-center justify-center">
+                    <span class="material-symbols-outlined">phone_enabled</span>
+                </span>
+                <div>
+                    <p class="text-[11px]">پاسخگویی ۲۴ ساعته شما هستیم</p>
+                    <a href="" class="text-lg">
+                        <b class="lg:underline lg:decoration-1 decoration-gray-400 lg:decoration-dotted">۹۰۰۰۱۶۹۰</b>
+                        <span class="text-[11px] font-bold">(بدون پیش شماره)</span>
+                    </a>
+                </div>
+            </div>
+            <figure class="w-2/3 lg:w-1/3 order-1 lg:order-2 flex justify-center items-center lg:justify-start">
+                <img src="/src/img/logo2.png" alt="">
+            </figure>
+            <div class="w-2/3 lg:w-1/4 order-3 lg:order-3">
+                <p class="text-xs text-center lg:text-right">در شبکه های اجتماعی ما را دنبال کنید</p>
+                <div class="w-full grid grid-cols-9 mt-2">
+                    <span class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </span>
+                    <span class="text-gray-300 text-center">|</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-check-icon lucide-message-circle-check"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="m9 12 2 2 4-4"/></svg>
+                    </span>
+                    <span class="text-gray-300 text-center">|</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12a9 9 0 0 1-13.2 7.9L3 21l1.1-4.6A9 9 0 1 1 21 12z"/>
+                            <path d="M8 10c1.5 3 3.5 5 6.5 6.5"/>
+                            <path d="M15.5 15c-.4.5-1 .8-1.6.8-2.2 0-5.7-3.5-5.7-5.7 0-.6.3-1.2.8-1.6"/>
+                        </svg>
+                    </span>
+                    <span class="text-gray-300 text-center">|</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </span>
+                    <span class="text-gray-300 text-center">|</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"/>
+                            <path d="M22 2L15 22l-4-9-9-4 20-7z"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- section2 -->
+        <div class="border-b-2 border-gray-300 w-full my-7 pb-5 lg:pb-2 flex flex-col lg:flex-row lg:justify-between items-center">
+            <div class="w-full lg:w-1/2 flex flex-wrap justify-between gap-y-4 mb-5">
+                <div class="w-1/3 lg:w-full">
+                    <p class="text-gray-400 flex gap-1 items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        شماره تماس
+                    </p>
+                    <a href="" class="text-[11px] underline decoration-1 decoration-gray-400">۰۹۳۰-۵۵۵-۴۷۶</a>
+                </div>
+                <div class="w-2/3 lg:w-full">
+                    <p class="text-gray-400 flex gap-1 items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
+                        </svg>
+                        ساعت کاری
+                    </p>
+                    <a href="" class="text-[10.5px] sm:text-xs ">شنبه تا چهارشنبه ۱۰ الی ۱۸، پنج شنبه ۱۰ الی ۱۴</a>
+                </div>
+                <div class="w-full">
+                    <p class="text-gray-400 flex gap-1 items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BCB5C7" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                        آدرس
+                    </p>
+                    <a href="" class="text-[10.5px] sm:text-xs">تهران، خیابان کریمخان، خیابان نجات الهی، کوچه کلانتری، پلاک ۷۲، واحد۵</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-[40%] grid grid-cols-3 gap-1">
+                <ul class="text-xs sm:text-sm font-bold flex flex-col gap-1">دسترسی سریع
+                    <li class="text-[11px] sm:text-xs list-disc font-normal pt-2 mr-4">صفحه اصلی</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">مقالات و بلاگ</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">درباره ما</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">حریم خصوصی</li>
+                </ul>
+                <ul class="text-xs sm:text-sm font-bold flex flex-col gap-1">راهنمای خرید
+                    <li class="text-[11px] sm:text-xs list-disc font-normal pt-2 mr-4">نحوه خرید</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">روش های پرداخت</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">روش های ارسال</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">مرجوعی کالا</li>
+                </ul>
+                <ul class="text-xs sm:text-sm font-bold flex flex-col gap-1">پشتیبانی مشتریان
+                    <li class="text-[11px] sm:text-xs list-disc font-normal pt-2 mr-4">تماس با ما</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">درباره ما</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">پرسش های پرتکرار</li>
+                    <li class="text-[11px] sm:text-xs list-disc font-normal mr-4">نظرسنجی مشتریان</li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- section3 -->
+        <div class="border-b-2 border-gray-300 w-full my-7 mb-4 flex flex-col lg:flex-row gap-y-3 justify-between items-center">
+            <div class="w-full md:w-2/3 flex flex-col justify-center">
+                <h6 class="font-bold text-sm mb-2">فروشگاه زودسود</h6>
+                <p class="text-[10px] lg:text-[11px] text-justify leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+            </div>
+            <div class="flex gap-2 items-center h-22 mb-8">
+                <figure class="bg-white p-4 rounded-xl h-full flex-1">
+                    <img class="w-full h-full" src="/src/img/namad1.png" alt="">
+                </figure>
+                <figure class="bg-white p-4 rounded-xl h-full flex-1">
+                    <img class="w-full h-full" src="/src/img/namad2.png" alt="">
+                </figure>
+                <figure class="bg-white p-4 rounded-xl h-full flex-1">
+                    <img class="w-full h-full" src="/src/img/namad3.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <p class="text-gray-400 text-center text-[10px]">کلیه حقوق سایت برای شرکت ایده تجارت زودسود محفوظ است.</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./src/app.js"></script>
+</body>
+</html>
