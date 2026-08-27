@@ -319,7 +319,7 @@
                         <strong class="font-medium text-[#30313a] mr-2">آدرس‌ها</strong>
                     </nav>
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-start">
-                        <aside class="lg:col-span-3 bg-white rounded-2xl p-3 lg:sticky lg:top-5">
+                        <aside class="hidden lg:block lg:col-span-3 bg-white rounded-2xl p-3 lg:sticky lg:top-5">
                             <div class="flex items-center gap-3 border-b border-[#EEF0F6] px-2 pb-4">
                                 <img src="./src/img/user.png" class="w-15 h-15 rounded-xl object-cover"/>
                                 <div class="w-[75%] flex justify-between items-center">
@@ -391,8 +391,11 @@
                             </nav>
                         </aside>
                         <div class="lg:col-span-9">
-                            <div class="my-6 flex items-center justify-between">
-                                <h1 class="text-xl font-bold text-[#252631]">
+                            <div class="my-3 flex items-center justify-between">
+                                <h1 class="text-xl font-bold text-[#252631] flex items-center gap-1">
+                                    <a href="./" class="lg:hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo2-icon lucide-undo-2"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
+                                    </a>
                                     آدرس‌های من
                                 </h1>
                                 <button class="text-xs font-bold text-[#9C0080]" type="button">

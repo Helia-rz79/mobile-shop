@@ -9,8 +9,8 @@
         </style>
     </head>
     <body x-data="shopApp" class="overflow-x-hidden">
-        <main class="min-h-screen w-full max-w-full overflow-x-clip bg-[#f7f7fc] max-[820px]:pb-32 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
-            <section class="container mx-auto w-full max-w-full bg-transparent">
+        <main class="min-h-screen w-full max-w-full overflow-x-clip bg-[#f7f7fc] max-[820px]:pb-5 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
+            <section class="container mx-auto bg-transparent">
                 <!-- header -->
                 <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3 sm:pb-5">
                     <section class="lg:hidden">
@@ -299,8 +299,8 @@
                     </aside>
                 </div>
                 <!-- body -->
-                <section class="pt-3.5 pb-4 min-[821px]:pt-5">
-                    <nav class="mb-3.5 flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:mb-5.5 min-[521px]:h-13.5" aria-label="مسیر صفحه">
+                <section class="pt-3.5  min-[821px]:pt-5">
+                    <nav class="flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:mb-5.5 min-[521px]:h-13.5" aria-label="مسیر صفحه">
                         <span aria-hidden="true">
                             <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 16.5v-2.75M9.23 2.585 2.879 7.673c-.715.568-1.173 1.769-1.017 2.667l1.219 7.297c.22 1.301 1.467 2.355 2.787 2.355h10.266c1.311 0 2.567-1.063 2.787-2.355l1.22-7.297c.146-.898-.313-2.1-1.018-2.667L12.77 2.594c-.98-.788-2.567-.788-3.538-.009" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -321,7 +321,7 @@
                         <strong class="font-medium text-[#30313a] mr-2">ایفون۱۷</strong>
                     </nav>
                 </section>
-                <section class="lg:pb-12">
+                <section class="pt-3.5">
                     <div class="grid w-full min-w-0 max-w-full grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(240px,320px)]">
                         <div class="w-full min-w-0 max-w-full">
                             <div class="grid w-full min-w-0 grid-cols-1 gap-5 md:grid-cols-[clamp(250px,25vw,360px)_minmax(0,1fr)]">
@@ -645,8 +645,7 @@
                     <div class="product-tab-panel hidden py-6 text-[13px] leading-8" data-panel="questions">آیا این محصول رجیستر شده است؟ بله، محصول با ضمانت رجیستری ارائه می‌شود.</div>
                     <div class="product-tab-panel hidden py-6" data-panel="reviews">
                         <p class="text-[13px]">میانگین امتیاز کاربران: ۴.۵ از ۵</p>
-                    </div>
-                    <div class="mt-7 grid gap-7 lg:grid-cols-[230px_1fr] ">
+                        <div class="mt-7 grid gap-7 lg:grid-cols-[230px_1fr] ">
                         <aside class="relative min-h-[110px] lg:min-h-0">
                             <h2 class="text-xl font-bold max-lg:text-lg">امتیاز و دیدگاه کاربران</h2>
                             <div class="mt-4 flex items-center gap-1 max-lg:mt-3">
@@ -786,6 +785,7 @@
                                 </svg>
                             </button>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -819,7 +819,7 @@
             </button>
         </div>
     </div>
-    <section class="w-full overflow-x-hidden bg-[#f7f7fc] px-4 pb-10 sm:px-6 md:px-8 lg:px-20 pt-1 lg:pt-10">
+    <section class="w-full overflow-x-clip bg-[#f7f7fc] px-4 pb-10 sm:px-6 md:px-8 lg:px-20 pt-1 lg:pt-7">
         <div class="container mx-auto space-y-12 lg:space-y-16">
             <!-- Related products slider -->
             <section>
@@ -841,7 +841,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="swiper relatedProductsSwiper h-[250px] w-full overflow-hidden sm:h-[290px] lg:h-[350px] lg:overflow-visible">
+                <div class="swiper relatedProductsSwiper h-[250px] w-full overflow-hidden sm:h-[300px] lg:h-[400px]">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
@@ -936,7 +936,7 @@
             </section>
             <!-- Related articles slider -->
             <section>
-                <div class="mb-6 flex items-center justify-between">
+                <div class="mb-5 flex items-center justify-between">
                     <div class="flex items-center gap-4">
                         <h2 class="text-lg font-bold">مقالات مشابه</h2>
                         <a href="#" class="text-xs font-bold text-[#9C0080]">مشاهده همه</a>
@@ -954,26 +954,26 @@
                         </button>
                     </div>
                 </div>
-                <div class="swiper relatedArticlesSwiper w-full overflow-hidden">
-                    <div class="swiper-wrapper">
+                <div class="swiper relatedArticlesSwiper w-full">
+                    <div class="swiper-wrapper h-[320px]">
                         <div class="swiper-slide">
-                            <article class="overflow-hidden rounded-2xl bg-white">
-                                <img src="./src/img/art1.png" class="h-64 w-full object-cover" alt="بررسی دوربین موبایل">
+                            <article class="overflow-hidden rounded-2xl">
+                                <img src="./src/img/art1.png" class="h-72 sm:h-80 w-full object-cover" alt="بررسی دوربین موبایل">
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="overflow-hidden rounded-2xl bg-white">
-                                <img src="./src/img/art2.png" class="h-64 w-full object-cover" alt="فناوری و موبایل">
+                            <article class="overflow-hidden rounded-2xl">
+                                <img src="./src/img/art2.png" class="h-72 sm:h-80 w-full object-cover" alt="فناوری و موبایل">
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="overflow-hidden rounded-2xl bg-white">
-                                <img src="./src/img/art3.png" class="h-64 w-full object-cover" alt="راهنمای خرید گوشی">
+                            <article class="overflow-hidden rounded-2xl">
+                                <img src="./src/img/art3.png" class="h-72 sm:h-80 w-full object-cover" alt="راهنمای خرید گوشی">
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="overflow-hidden rounded-2xl bg-white">
-                                <img src="./src/img/art2.png" class="h-64 w-full object-cover" alt="نگهداری از موبایل">
+                            <article class="overflow-hidden rounded-2xl">
+                                <img src="./src/img/art2.png" class="h-72 sm:h-80 w-full object-cover" alt="نگهداری از موبایل">
                             </article>
                         </div>
                     </div>

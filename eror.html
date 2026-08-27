@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>صفحه پیدا نشد | زودسود</title>
+        <link rel="stylesheet" href="./src/output.css">
+    </head>
+    <body class="h-screen overflow-hidden bg-[#F7F7FC] text-[#20212A]">
+        <main class="flex h-screen w-full flex-col items-center justify-center px-5 py-5">
+            <img src="./src/img/logo.png" class="mb-6 h-10 w-auto object-contain sm:h-12" alt="زودسود">
+
+            <section class="w-full max-w-sm overflow-hidden rounded bg-black shadow-2xl" aria-labelledby="error-title">
+                <div class="relative flex h-5 items-center bg-black px-2" dir="ltr">
+                    <span class="mr-1 size-2 rounded-full bg-red-500"></span>
+                    <span class="mr-1 size-2 rounded-full bg-yellow-400"></span>
+                    <span class="size-2 rounded-full bg-green-500"></span>
+                    <span class="absolute inset-x-0 text-center text-[7px] text-white/70">untitled</span>
+                </div>
+
+                <div class="flex h-96 flex-col items-center justify-center px-7 pb-10 text-center sm:px-10">
+                    <p class="text-7xl font-black leading-none text-[#B00091]">۴۰۴</p>
+                    <h1 id="error-title" class="mt-5 text-lg font-black text-[#B00091]">صفحه موردنظر یافت نشد...</h1>
+                    <p class="mt-5 text-xs leading-7 text-white/80">
+                        اگر از صحت آدرس این صفحه اطمینان دارید، با پشتیبانی تماس بگیرید. در غیر این‌صورت، پس از چند دقیقه دوباره امتحان کنید.
+                    </p>
+                </div>
+            </section>
+
+            <a href="./index.html" class="mt-6 flex h-12 w-48 items-center justify-center rounded-xl bg-green-500 text-sm font-bold text-white transition hover:bg-green-600">
+                بازگشت به صفحه اصلی
+            </a>
+        </main>
+    </body>
+</html>

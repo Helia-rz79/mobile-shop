@@ -331,7 +331,7 @@
                         <!-- //// بخش مقایسه محصولات دقیقا طبق عکس -->
                         <div class="w-full bg-transparent relative mt-4">
                             <!-- هدر بخش: عنوان و دکمه های بالا -->
-                            <div class="w-full flex flex-col sm:flex-row items-center justify-between gap-3 mb-4">
+                            <div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-3 mb-4">
                                 <div class="flex-col items-center gap-2">
                                     <h2 class="text-xl font-bold">مقایسه محصولات</h2>
                                     <p class="text-xs">مشخصات، قیمت، موجودی و ویژگی‌های محصولات را در کنار هم مقایسه کنید تا بهترین انتخاب را داشته باشید.</p>
@@ -346,11 +346,12 @@
                                 </div>
                             </div>
                             <!-- جدول مقایسه محصولات -->
-                            <div class="w-full rounded-xl bg-white p-4">
+                            <div class="w-full rounded-xl bg-white p-2 sm:p-4">
                                 <div class="w-full">
                                     <!-- ردیف اول: تصاویر و دکمه ها -->
-                                    <div class="grid grid-cols-2 lg:grid-cols-4 p-1 lg:p-4 gap-1 lg:gap-4">
-                                        <div class="flex flex-col gap-2 p-1 min-h-[280px] max-h[370px]">
+                                    <div class="compare-cards-scroll w-full cursor-grab select-none overflow-x-auto active:cursor-grabbing">
+                                        <div class="flex w-max min-w-full gap-1 p-1 lg:gap-4 lg:p-4">
+                                        <div class="flex w-[170px] shrink-0 flex-col gap-2 p-1 min-h-[280px] max-h[370px] lg:w-[250px]">
                                             <div class="w-full rounded-lg border border-gray-200 p-1 flex-col gap-2">
                                                 <button class="w-5 h-5 ml-auto bg-gray-100 p-1.5 rounded-md hover:text-red-500">
                                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.75.75-6 6m6 0-6-6" stroke="#cdcddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -361,7 +362,7 @@
                                             <p class="font-bold text-sm">۲۶۵,۹۹۹,۰۰۰ تومان</p>
                                             <button class="h-11 mt-2 bg-[#0f0f0f] text-white font-bold py-2 rounded-lg text-xs hover:bg-gray-800 transition">افزودن به سبد خرید</button>
                                         </div>
-                                        <div class="flex flex-col gap-2 p-1 min-h-[280px] max-h[370px]">
+                                        <div class="flex w-[170px] shrink-0 flex-col gap-2 p-1 min-h-[280px] max-h[370px] lg:w-[250px]">
                                             <div class="w-full rounded-lg border border-gray-200 p-1 flex-col gap-2">
                                                 <button class="w-5 h-5 ml-auto bg-gray-100 p-1.5 rounded-md hover:text-red-500">
                                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.75.75-6 6m6 0-6-6" stroke="#cdcddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -373,7 +374,7 @@
                                             <button class="h-11 mt-2 bg-[#0f0f0f] text-white font-bold py-2 rounded-lg text-xs hover:bg-gray-800 transition">افزودن به سبد خرید</button>
                                         </div>
                                         <!-- ستون اول: جای خالی برای افزودن محصول اول -->
-                                        <div class="flex flex-col items-center justify-between gap-2 min-h-[280px] max-h[370px] p-1">
+                                        <div class="flex w-[170px] shrink-0 flex-col items-center justify-between gap-2 min-h-[280px] max-h[370px] p-1 lg:w-[250px]">
                                             <div class="w-full h-46 flex justify-center items-center p-1 border-2 border-dashed border-gray-300 rounded-xl">
                                                 <span class="w-14 h-14 flex justify-center items-center bg-[#f1f3f6] p-4 rounded-full">
                                                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 1.5v20m-10-10h20" stroke="#cdcddd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -384,7 +385,7 @@
                                             <button class="w-full h-11 mt-3 border border-gray-800 text-gray-800 font-bold p-2 rounded-lg text-xs hover:bg-gray-50 transition">انتخاب محصول</button>
                                         </div>
                                         <!-- ستون دوم: جای خالی برای افزودن محصول دوم -->
-                                        <div class="flex flex-col items-center justify-between gap-2 min-h-[280px] max-h[370px] p-1">
+                                        <div class="flex w-[170px] shrink-0 flex-col items-center justify-between gap-2 min-h-[280px] max-h[370px] p-1 lg:w-[250px]">
                                             <div class="w-full h-46 flex justify-center items-center p-1 border-2 border-dashed border-gray-300 rounded-xl">
                                                 <span class="w-14 h-14 flex justify-center items-center bg-[#f1f3f6] p-4 rounded-full">
                                                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 1.5v20m-10-10h20" stroke="#cdcddd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -393,6 +394,7 @@
                                             <span class="text-sm font-bold text-gray-800">افزودن محصول</span>
                                             <span class="text-[10px] text-gray-400 text-center mt-1">برای مقایسه یک محصول دیگر، آن را انتخاب کنید</span>
                                             <button class="w-full h-11 mt-3 border border-gray-800 text-gray-800 font-bold p-2 rounded-lg text-xs hover:bg-gray-50 transition">انتخاب محصول</button>
+                                        </div>
                                         </div>
                                     </div>
                                     <!-- ردیف دوم: مشخصات کلی -->

@@ -408,7 +408,7 @@
                                                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.208 7.417a2.083 2.083 0 1 1-4.167 0 2.083 2.083 0 0 1 4.167 0Z" stroke="#92a2c4" stroke-width="1.5"/><path d="M.75 7.417c0-2.948 0-4.422.877-5.406q.21-.237.463-.435C3.135.75 4.7.75 7.833.75h2.5c3.133 0 4.699 0 5.744.826q.251.198.462.435c.878.984.878 2.458.878 5.406s0 4.422-.878 5.406q-.21.236-.462.435c-1.045.825-2.612.825-5.744.825h-2.5c-3.132 0-4.698 0-5.743-.825a3.7 3.7 0 0 1-.463-.435C.75 11.838.75 10.365.75 7.417" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.508 7.417H14.5m-10.833 0H3.66" stroke="#92a2c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                                 روش پرداخت
                                             </h3>
-                                            <div class="mt-7 grid grid-cols-1 md:grid-cols-2 gap-5">
+                                            <div class="mt-7 grid grid-cols-1 gap-5">
                                                 <div class="rounded-xl border border-[#D9DDE8] p-4 space-y-10">
                                                     <label class="flex items-center gap-3 cursor-pointer">
                                                         <input type="radio" name="payment" checked class="w-4 h-4 accent-[#9C0080] shrink-0">
@@ -427,19 +427,31 @@
                                                             <small class="block mt-1 text-[11px] text-[#30313A]">موجودی فعلی: ۱۲,۵۰۰,۰۰۰ تومان</small></span>
                                                     </label>
                                                 </div>
-                                                <div class="rounded-xl border border-[#D9DDE8] p-4 space-y-9">
-                                                    <label class="cursor-pointer flex items-center gap-3">
-                                                        <input type="radio" name="payment" class="w-4 h-4 mt-1 accent-[#9C0080] shrink-0">
-                                                        <span class="w-10 h-10 rounded-xl bg-[#DDF2FF] flex items-center justify-center shrink-0 text-[10px] leading-3 font-bold text-[#168BE8]">
+                                                <div class="rounded-xl border border-[#D9DDE8] p-4">
+                                                    <div class="space-y-7">
+                                                        <label class="flex w-full cursor-pointer items-center justify-between gap-2 sm:gap-4">
+                                                            <input type="radio" name="payment" class="h-4 w-4 shrink-0 accent-[#9C0080]">
+                                                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#DDF2FF] text-[10px] font-bold leading-3 text-[#168BE8]">
                                                             <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#008ef9"><path d="M1.431.703C2.48.133 3.73.455 4.745.95c-.147.403-.318.875-.74 1.034-.488.24-1.032-.241-1.512.058-.294.116-.46.536-.229.796.376.374.925.4 1.385.596.602.208 1.201.662 1.334 1.351.13.858-.01 1.882-.7 2.449-1.133.901-2.752.736-3.93.014-.095-.074-.278-.131-.24-.294.202-.475.48-.91.677-1.387.558.442 1.264.92 1.99.644.422-.134.614-.79.207-1.068-.575-.424-1.333-.42-1.93-.805a1.36 1.36 0 0 1-.633-.828C.12 2.485.486 1.205 1.43.703M29.196.589c.558.006 1.118-.012 1.676.016-.328 1.23-.611 2.473-.933 3.704a.95.95 0 0 1-.885.716c-.31.018-.623.007-.934.015.317-1.493.722-2.967 1.076-4.451M7.672 2.835c.438-.184.937-.178 1.392-.068.531.136.934.63 1.037 1.188.135.756.06 1.531.082 2.297.012.406-.005.878-.335 1.154-.348.357-.867.217-1.302.23.022-.802.005-1.605.013-2.408-.01-.347.005-.755-.251-1.019-.398-.314-1.1-.173-1.25.366-.197.689-.048 1.422-.098 2.128.004.425-.305.822-.694.92-.31.04-.627.044-.935-.023.041-1.594-.015-3.19.028-4.785.53.059 1.064.018 1.596.013.002.2 0 .4.004.598.231-.204.418-.48.713-.59m3.218.916c.438-.719 1.265-1.144 2.073-1.053.457.017.865.26 1.225.536l.001-.376c.54-.065 1.082.033 1.622-.032.017 1.254 0 2.507.008 3.76.034.458-.261.931-.694 1.035-.307.045-.618.019-.926.023q.004-.244.006-.49c-.351.397-.828.68-1.356.66-1.042.063-2.012-.758-2.266-1.806-.222-.753-.087-1.594.308-2.257m1.89.5c-.571.225-.79 1.036-.483 1.572.294.554 1.052.668 1.533.324.485-.337.55-1.123.198-1.588-.286-.386-.83-.486-1.248-.308m5.164-.91c.836-1.027 2.507-.775 3.21.293.737 1.022.66 2.607-.21 3.518-.783.84-2.172.889-3.006.103-.063.7.216 1.542-.267 2.126-.347.405-.902.296-1.362.3.001-2.283-.002-4.567.001-6.85h1.631zm.564.908c-.708.272-.835 1.399-.239 1.867.608.514 1.7.108 1.705-.767.12-.816-.778-1.435-1.466-1.1m5.075-.857c.683-.99 2.181-.871 2.955-.061.918.905 1.017 2.554.238 3.588-.727 1.047-2.287 1.191-3.203.34.007.496.014.992 0 1.488-.004.45-.356.854-.776.92-.282.042-.567.02-.849-.001.015-2.273.004-4.545.003-6.818.54-.022 1.082.002 1.622-.02q.003.282.01.564m.54.868c-.736.307-.794 1.548-.094 1.936.655.43 1.683-.106 1.579-.969.052-.792-.84-1.297-1.484-.967m4.193 1.449c.703-.285 1.52.435 1.345 1.217-.094.789-1.084 1.166-1.655.666-.632-.484-.45-1.655.31-1.884M.097 10.32c.976-.009 1.954 0 2.93-.006.68-.01 1.41.256 1.808.864.395.575.439 1.323.359 2.005-.078.652-.435 1.287-1.011 1.577-.72.383-1.551.273-2.33.274-.024.786 0 1.574-.012 2.361q-.874.003-1.749.002c-.07-1.82-.019-3.644-.027-5.464.02-.537-.022-1.077.032-1.614m1.742 1.464q.009.886.001 1.773c.372-.001.763.053 1.118-.096.587-.264.59-1.312-.001-1.576-.355-.142-.745-.1-1.118-.1m4.435 1.286a2.17 2.17 0 0 1 2.155-.572c.312.087.563.311.836.483l.002-.4q.821-.01 1.642 0c-.016 1.604-.002 3.209-.009 4.813q-.816.005-1.633.001v-.48c-.887 1.01-2.58.738-3.277-.373-.69-1.032-.587-2.589.284-3.472m1.667.865c-.805.237-.965 1.505-.256 1.96.609.458 1.56.006 1.62-.78.12-.763-.673-1.446-1.364-1.18m3.436-1.359c.63.016 1.26-.03 1.89.025.37.82.784 1.618 1.185 2.422.428-.797.763-1.653 1.21-2.434a23 23 0 0 1 1.838.004c-1.228 2.4-2.447 4.805-3.674 7.205-.599.004-1.197 0-1.796.004.457-1.057 1.053-2.044 1.538-3.09-.742-1.371-1.5-2.737-2.191-4.136"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h31v20H0z"/></clipPath></defs></svg>
-                                                        </span>
-                                                        <span><strong class="block text-[13px] text-[#30313A]">پرداخت اقساطی با اسنپ پی</strong>
-                                                            <small class="block mt-1 text-[11px] text-[#30313A]">الان بخرید در ۴ قسط پرداخت کنید.</small></span>
-                                                    </label>
-                                                    <span class="rounded-xl bg-[#F5F4FC] px-3 py-2 block">
-                                                        <small class="block text-[10px] text-[#30313A]">۴ قسط بدون کارمزد</small>
-                                                        <strong class="block mt-1 text-[10px] font-semibold text-[#30313A]">ماهانه ۲۴,۷۰۰,۳۱۵ تومان</strong>
-                                                    </span>
+                                                            </span>
+                                                            <span class="min-w-0 flex-1">
+                                                                <strong class="block text-[13px] text-[#30313A]">پرداخت اقساطی با اسنپ پی</strong>
+                                                                <small class="mt-1 block text-[11px] text-[#30313A]">الان بخرید در ۴ قسط پرداخت کنید.</small>
+                                                            </span>
+                                                                <span class="block w-[125px] shrink-0 rounded-lg bg-[#F5F4FC] px-2 py-2 sm:w-[190px] sm:px-3">
+                                                                    <small class="block text-[10px] text-[#30313A]">۴ قسط بدون کارمزد</small>
+                                                                    <strong class="block mt-1 text-[10px] font-semibold text-[#30313A]">ماهانه ۲۴,۷۰۰,۳۱۵ تومان</strong>
+                                                                </span>
+                                                        </label>
+                                                        <label class="w-full flex cursor-pointer items-center gap-3">
+                                                            <input type="radio" name="payment" class="h-4 w-4 shrink-0 accent-[#00C853]">
+                                                            <span class="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#E8F8E4] p-1">
+                                                                <img src="./src/img/trobPay.png" class="h-full w-full object-contain" alt="ترب‌پی">
+                                                            </span>
+                                                            <span><strong class="block text-[13px] text-[#30313A]">پرداخت اقساطی با ترب پی</strong>
+                                                                <small class="mt-1 block text-[11px] text-[#30313A]">الان بخرید در ۴ قسط پرداخت کنید.</small></span>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                                 
                                             </div>
@@ -449,14 +461,14 @@
                             </div>
 
                             <!-- ================= CART SUMMARY ================= -->
-                            <aside class="col-span-1 lg:col-span-3">
-                                <div class="bg-white rounded-2xl overflow-hidden">
+                            <aside class="col-span-1 lg:col-span-3 lg:sticky lg:top-5 lg:self-start">
+                                <div class="overflow-hidden rounded-[30px] bg-white lg:rounded-2xl">
                                     <!-- Summary -->
-                                    <div class="p-5 xl:p-8">
+                                    <div class="px-7 py-8 lg:p-5 xl:p-8">
                                         <h2 class="hidden lg:block text-lg font-bold text-[#20212A] mb-6">
                                             سبد خرید
                                         </h2>
-                                        <div class="space-y-5">
+                                        <div class="space-y-6 lg:space-y-5">
                                             <div class="flex items-center justify-between text-xs">
                                                 <span class="text-[#30313A]">
                                                     تعداد کالاها
@@ -493,10 +505,10 @@
                                             </div>
                                         </div>
                                         <!-- dotted separator -->
-                                        <div class="relative my-6">
+                                        <div class="relative my-8 lg:my-6">
                                             <div class="border-t-4 border-dotted border-[#F0F0FA]"></div>
-                                            <span class="absolute -right-12 -top-4 w-8 h-8 rounded-full bg-[#F7F7FC]"></span>
-                                            <span class="absolute -left-12 -top-4 w-8 h-8 rounded-full bg-[#F7F7FC]"></span>
+                                            <span class="absolute -right-11 -top-5 size-10 rounded-full bg-[#F7F7FC] lg:-right-9 lg:-top-4 lg:size-8 xl:-right-12"></span>
+                                            <span class="absolute -left-11 -top-5 size-10 rounded-full bg-[#F7F7FC] lg:-left-9 lg:-top-4 lg:size-8 xl:-left-12"></span>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <span class="text-xs text-[#30313A]">
@@ -508,7 +520,7 @@
                                         </div>
                                     </div>
                                     <!-- Checkout -->
-                                    <button class="w-full h-[55px] text-sm xl:text-base bg-[#00C853] text-white flex items-center justify-between px-6 font-bold">
+                                    <button class="hidden h-[55px] w-full items-center justify-between bg-[#00C853] px-6 text-sm font-bold text-white lg:flex xl:text-base">
                                         <span>
                                             ثبت سفارش و پرداخت نهایی
                                         </span>
@@ -516,8 +528,15 @@
                                     </button>
                                 </div>
 
+                                <button class="fixed inset-x-4 bottom-4 z-50 flex h-16 items-center justify-between rounded-2xl bg-[#00C853] px-7 text-sm font-bold text-white shadow-lg lg:hidden">
+                                    <span>
+                                        ثبت سفارش و پرداخت نهایی
+                                    </span>
+                                    <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.751 5.958h16.667m-11.46 5.209S.75 7.33.75 5.958 5.958.75 5.958.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+
                                 <!-- Bottom note -->
-                                <p class="text-xs text-[#92A2C4] text-center mt-3 leading-5">
+                                <p class="mt-6 px-4 text-center text-xs leading-5 text-[#92A2C4] lg:mt-3 lg:px-0">
                                     با ثبت سفارش قوانین و مقررات زودسود را می‌پذیرم.
                                 </p>
                             </aside>

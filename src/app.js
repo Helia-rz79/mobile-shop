@@ -68,6 +68,12 @@ voteReview(index, type) {
   if (type === "dislike") vote.dislikes++;
 },
 init() {
+const bannerImageSection = document.getElementById("banner-image-section");
+const bannerImageMount = document.getElementById("banner-image-mount");
+if (bannerImageSection && bannerImageMount) {
+  bannerImageMount.replaceWith(bannerImageSection);
+}
+
 const mobileInput = document.querySelector("#mobile");
 
 const toPersianDigits = (value) =>
@@ -378,7 +384,7 @@ const relatedProductsSwiper = new Swiper(".relatedProductsSwiper", {
 });
 
 const relatedArticlesSwiper = new Swiper(".relatedArticlesSwiper", {
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 14,
   watchOverflow: true,
   navigation: {
@@ -386,8 +392,80 @@ const relatedArticlesSwiper = new Swiper(".relatedArticlesSwiper", {
     prevEl: ".relatedArticlesPrev",
   },
   breakpoints: {
-    560: { slidesPerView: 2, spaceBetween: 16 },
-    900: { slidesPerView: 3, spaceBetween: 20 },
+    560: { slidesPerView: 1.5, spaceBetween: 16 },
+    720: { slidesPerView: 2, spaceBetween: 16 },
+    900: { slidesPerView: 2.5, spaceBetween: 20 },
+    1200: { slidesPerView: 3, spaceBetween: 20 },
+  },
+});
+
+const reviewSwiper = new Swiper(".reviewSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  watchOverflow: true,
+  navigation: {
+    nextEl: ".reviewNext",
+    prevEl: ".reviewPrev",
+  },
+  breakpoints: {
+    640: { slidesPerView: 2, spaceBetween: 16 },
+    1024: { slidesPerView: 3, spaceBetween: 16 },
+  },
+});
+
+const componentHeroOne = new Swiper(".componentHeroOne", {
+  loop: true,
+  navigation: { nextEl: ".componentHeroOneNext", prevEl: ".componentHeroOnePrev" },
+  pagination: { el: ".componentHeroOnePagination", clickable: true },
+});
+
+const componentHeroTwo = new Swiper(".componentHeroTwo", {
+  loop: true,
+  navigation: { nextEl: ".componentHeroTwoNext", prevEl: ".componentHeroTwoPrev" },
+  pagination: { el: ".componentHeroTwoPagination", clickable: true },
+});
+
+const componentOfferSlides = document.querySelectorAll(".componentOffers .swiper-slide");
+const componentOfferCard = componentOfferSlides[0]?.firstElementChild;
+if (componentOfferCard) {
+  componentOfferSlides.forEach((slide, index) => {
+    if (index > 0) slide.replaceChildren(componentOfferCard.cloneNode(true));
+  });
+
+  const offersWrapper = document.querySelector(".componentOffers .swiper-wrapper");
+  const extraSlide = componentOfferSlides[0]?.cloneNode(true);
+  if (offersWrapper && extraSlide) offersWrapper.appendChild(extraSlide);
+}
+
+const componentOffers = new Swiper(".componentOffers", {
+  slidesPerView: 1.25,
+  spaceBetween: 12,
+  watchOverflow: false,
+  navigation: {
+    nextEl: ".componentOffersNext",
+    prevEl: ".componentOffersPrev",
+  },
+  breakpoints: {
+    480: { slidesPerView: 2.2, spaceBetween: 12 },
+    768: { slidesPerView: 3, spaceBetween: 16 },
+    1024: { slidesPerView: 4, spaceBetween: 20 },
+  },
+});
+
+const componentBrands = new Swiper(".componentBrands", {
+  slidesPerView: 2.5,
+  spaceBetween: 18,
+  watchOverflow: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".componentBrandsNext",
+    prevEl: ".componentBrandsPrev",
+  },
+  breakpoints: {
+    480: { slidesPerView: 3.5, spaceBetween: 20 },
+    640: { slidesPerView: 4.5, spaceBetween: 24 },
+    768: { slidesPerView: 5.5, spaceBetween: 28 },
+    1024: { slidesPerView: 7, spaceBetween: 32 },
   },
 });
 }
@@ -605,6 +683,42 @@ const productWarranty = document.getElementById("product-warranty");
 const selectedProductWarranty = document.getElementById("selected-product-warranty");
 productWarranty?.addEventListener("change", () => {
   if (selectedProductWarranty) selectedProductWarranty.textContent = productWarranty.value;
+});
+
+// Drag the comparison cards horizontally with a mouse or pointer.
+document.querySelectorAll(".compare-cards-scroll").forEach((scroller) => {
+  let startX = 0;
+  let startScrollLeft = 0;
+  let dragged = false;
+
+  scroller.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    startX = event.clientX;
+    startScrollLeft = scroller.scrollLeft;
+    dragged = false;
+    scroller.setPointerCapture(event.pointerId);
+  });
+
+  scroller.addEventListener("pointermove", (event) => {
+    if (!scroller.hasPointerCapture(event.pointerId)) return;
+    const distance = event.clientX - startX;
+    if (Math.abs(distance) > 4) dragged = true;
+    scroller.scrollLeft = startScrollLeft - distance;
+  });
+
+  scroller.addEventListener("pointerup", (event) => {
+    if (scroller.hasPointerCapture(event.pointerId)) {
+      scroller.releasePointerCapture(event.pointerId);
+    }
+  });
+
+  scroller.addEventListener("click", (event) => {
+    if (dragged) {
+      event.preventDefault();
+      event.stopPropagation();
+      dragged = false;
+    }
+  }, true);
 });
 },
 }));
