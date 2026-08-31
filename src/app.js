@@ -26,6 +26,14 @@ closeGallery() {
   this.galleryModalOpen = false;
   document.body.style.overflow = "";
 },
+openReviewForm() {
+  this.reviewFormOpen = true;
+  document.body.style.overflow = "hidden";
+},
+closeReviewForm() {
+  this.reviewFormOpen = false;
+  document.body.style.overflow = "";
+},
 nextGalleryImage() {
   this.galleryIndex = (this.galleryIndex + 1) % this.galleryImages.length;
 },
@@ -185,6 +193,71 @@ mobileMenuTabs.forEach((tab) => {
   });
 });
 
+// Header search suggestions
+const headerSearchProducts = [
+  { name: "تبلت اپل مدل iPad Pro M4 ظرفیت ۲۵۶ گیگابایت", price: "۷۰۰,۰۰۰" },
+  { name: "تبلت اپل مدل iPad Air ظرفیت ۲۵۶ گیگابایت", price: "۷۵۰,۰۰۰", oldPrice: "۸۰۰,۰۰۰" },
+  { name: "تبلت اپل مدل iPad Pro M4 ظرفیت ۱۲۸ گیگابایت", price: "۷۰۰,۰۰۰" },
+  { name: "تبلت اپل مدل iPad Air ظرفیت ۱۲۸ گیگابایت", unavailable: true },
+  { name: "تبلت اپل مدل iPad Pro M4 ظرفیت ۵۱۲ گیگابایت", price: "۷۰۰,۰۰۰" },
+  { name: "تبلت اپل مدل iPad Air ظرفیت ۵۱۲ گیگابایت", unavailable: true },
+];
+
+document.querySelectorAll("[data-header-search]").forEach((input) => {
+
+  const searchBox = input.parentElement;
+  if (!searchBox) return;
+  searchBox.style.position = "relative";
+
+  const panel = document.createElement("section");
+  panel.hidden = true;
+  panel.setAttribute("role", "status");
+  panel.setAttribute("aria-live", "polite");
+  panel.style.cssText = "position:absolute;top:calc(100% + 10px);right:0;z-index:80;width:min(680px,calc(100vw - 32px));padding:20px 26px 16px;border-radius:14px;background:#f8fafc;box-shadow:0 12px 30px rgba(24,24,36,.10);direction:rtl;";
+  panel.innerHTML = `
+    <div class="header-search-results" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;"></div>
+    <div style="margin-top:14px;border-top:2px solid #e5e7eb;"></div>
+    <button type="button" class="header-search-more" style="display:block;margin:14px auto 0;border:0;border-bottom:2px solid #d1d5db;background:transparent;padding:0 2px 5px;color:#c4c8d1;font:inherit;font-size:12px;cursor:pointer;">مشاهده نتایج بیشتر</button>
+  `;
+  searchBox.appendChild(panel);
+
+  const results = panel.querySelector(".header-search-results");
+  const renderResults = () => {
+    if (!results) return;
+    results.innerHTML = headerSearchProducts.map((product) => `
+      <a href="#" style="display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:10px;min-height:82px;color:#181824;text-decoration:none;">
+        <img src="./src/img/tablet.png" alt="${product.name}" style="width:64px;height:72px;object-fit:contain;background:#fff;">
+        <span style="min-width:0;">
+          <strong style="display:block;font-size:11px;line-height:1.8;font-weight:700;">${product.name}</strong>
+          ${product.unavailable
+            ? '<small style="display:block;margin-top:7px;color:#d1d5db;font-size:11px;font-weight:700;">ناموجود</small>'
+            : `<small style="display:flex;justify-content:space-between;align-items:center;margin-top:7px;color:#ad078d;font-size:12px;font-weight:700;direction:ltr;"><span style="direction:rtl;">${product.price} <em style="font-size:9px;font-style:normal;">تومان</em></span>${product.oldPrice ? `<del style="color:#9ca3af;font-size:10px;font-weight:400;direction:rtl;">${product.oldPrice}</del>` : ""}</small>`}
+        </span>
+      </a>
+    `).join("");
+  };
+
+  const setSearchPanel = (isOpen) => {
+    panel.hidden = !isOpen;
+    searchBox.style.zIndex = isOpen ? "80" : "";
+  };
+
+  input.addEventListener("input", () => {
+    const hasQuery = input.value.trim().length > 0;
+    if (hasQuery) renderResults();
+    setSearchPanel(hasQuery);
+  });
+  input.addEventListener("focus", () => {
+    if (input.value.trim()) setSearchPanel(true);
+  });
+  document.addEventListener("click", (event) => {
+    if (!searchBox.contains(event.target)) setSearchPanel(false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setSearchPanel(false);
+  });
+});
+
 const desktopCategoriesTrigger = document.querySelector("#desktop-categories-trigger");
 const desktopMegaMenu = document.querySelector("#desktop-mega-menu");
 let desktopMenuPinned = false;
@@ -281,6 +354,10 @@ const newSwiper = new Swiper(".newSwiper", {
     },
     1060: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1350: {
+      slidesPerView: 4.5,
       spaceBetween: 20,
     },
   },
@@ -666,6 +743,20 @@ document.querySelectorAll(".expand-toggle").forEach((button) => {
         : "مشاهده کمتر";
     }
     if (icon) icon.classList.toggle("rotate-180", !isExpanded);
+  });
+});
+
+// Product color and warranty selection
+// Cart discount code and order description accordions
+document.querySelectorAll(".cart-accordion-toggle").forEach((button) => {
+  button.addEventListener("click", () => {
+    const panel = document.getElementById(button.getAttribute("aria-controls") || "");
+    if (!panel) return;
+
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!isExpanded));
+    panel.classList.toggle("hidden", isExpanded);
+    button.querySelector(".cart-accordion-arrow")?.classList.toggle("rotate-180", !isExpanded);
   });
 });
 

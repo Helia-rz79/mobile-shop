@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
     <body x-data="shopApp">
-        <main class="w-full min-h-screen bg-[#f7f7fc] max-[820px]:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
+        <main class="w-full min-h-screen bg-[#f7f7fc] max-[820px]:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-32 pt-4 sm:pt-6 md:pt-10">
             <section class="bg-transparent container mx-auto">
                 <!-- header -->
-                <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3 sm:pb-5">
+                <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3">
                     <section class="lg:hidden">
                         <div class="bg-[#9C0080]/10 w-full h-10 flex items-center justify-between rounded-lg py-2 sm:py-3 px-4 sm:px-6">
                             <div class="flex items-center gap-2 sm:gap-3 text-sm sm:text-xl">
@@ -59,7 +59,7 @@
                                     <img class="flex" src="./src/img/logo.png" alt="">
                                 </figure>
                                 <div class="w-2/3 bg-white flex justify-between items-center p-3 pl-2 rounded-lg h-12">
-                                    <input class="placeholder:text-[14px] w-full" type="text" placeholder="جستجو ...">
+                                    <input data-header-search class="placeholder:text-[14px] w-full focus:outline-none text-[13px] font-semibold text-[#92A2C4]" type="text" placeholder="جستجو ...">
                                     <span class="bg-gray-100 p-1.5 rounded-lg my-1 flex-shrink-0">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#181824" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full h-16 flex items-center justify-between mt-10">
+                        <div class="w-full h-16 flex items-center justify-between mt-3">
                             <ul class="lg:w-4/5 h-full flex items-center gap-5 xl:gap-8 *:text-[13px] overflow-x-auto cursor-pointer">
                                 <li id="desktop-categories-trigger" role="button" tabindex="0" class="flex items-center gap-4 bg-[#9C0080] text-white rounded-lg px-5 font-bold h-11 flex-shrink-0" aria-controls="desktop-mega-menu" aria-expanded="false">
                                     <span>دسته بندی ها</span>
@@ -297,8 +297,8 @@
                     </aside>
                 </div>
                 <!-- body -->
-                <section class="pt-3.5 pb-12 min-[821px]:pt-5" aria-label="مقایسه گوشی موبایل">
-                    <nav class="mb-3.5 flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:mb-5.5 min-[521px]:h-13.5" aria-label="مسیر صفحه">
+                <section class="pt-4 pb-12" aria-label="مقایسه گوشی موبایل">
+                    <nav class="mb-4 flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:h-13.5" aria-label="مسیر صفحه">
                         <span aria-hidden="true">
                             <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 16.5v-2.75M9.23 2.585 2.879 7.673c-.715.568-1.173 1.769-1.017 2.667l1.219 7.297c.22 1.301 1.467 2.355 2.787 2.355h10.266c1.311 0 2.567-1.063 2.787-2.355l1.22-7.297c.146-.898-.313-2.1-1.018-2.667L12.77 2.594c-.98-.788-2.567-.788-3.538-.009" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -470,7 +470,7 @@
                             <aside class="col-span-1 lg:col-span-3 lg:sticky lg:top-5 lg:self-start">
                                 <div class="overflow-hidden rounded-[30px] bg-white lg:rounded-2xl">
                                     <!-- Summary -->
-                                    <div class="px-7 py-8 lg:p-5 xl:p-8">
+                                    <div class="px-7 py-8 lg:px-4 lg:py-5 xl:px-6 xl:py-8">
                                         <h2 class="hidden lg:block text-lg font-bold text-[#20212A] mb-6">
                                             سبد خرید
                                         </h2>
@@ -505,7 +505,7 @@
                                                     هزینه ارسال
                                                 </span>
 
-                                                <span class="text-[#92A2C4]">
+                                                <span class="text-[#92A2C4] lg:text-[11px]">
                                                     ماهکس (پس کرایه - به عهده مشتری)
                                                 </span>
                                             </div>
@@ -526,7 +526,7 @@
                                         </div>
                                     </div>
                                     <!-- Checkout -->
-                                    <button class="hidden h-[55px] w-full items-center justify-between bg-[#00C853] px-6 text-sm font-bold text-white lg:flex xl:text-base">
+                                    <button class="hidden h-[55px] w-full cursor-pointer items-center justify-between bg-[#00C853] px-6 text-sm font-bold text-white transition-colors duration-500 hover:bg-[#9C0080] lg:flex xl:text-base">
                                         <span>
                                             ثبت سفارش و پرداخت نهایی
                                         </span>
@@ -534,7 +534,7 @@
                                     </button>
                                 </div>
 
-                                <button class="fixed inset-x-4 bottom-4 z-50 flex h-16 items-center justify-between rounded-2xl bg-[#00C853] px-7 text-sm font-bold text-white shadow-lg lg:hidden">
+                                <button class="fixed inset-x-4 bottom-4 z-50 flex h-16 cursor-pointer items-center justify-between rounded-2xl bg-[#00C853] px-7 text-sm font-bold text-white shadow-lg transition-colors duration-500 hover:bg-[#9C0080] lg:hidden">
                                     <span>
                                         ثبت سفارش و پرداخت نهایی
                                     </span>

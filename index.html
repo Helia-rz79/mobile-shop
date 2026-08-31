@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body x-data="shopApp">
-  <main class="w-full min-h-screen bg-[#f7f7fc] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
+  <main class="w-full min-h-screen bg-[#f7f7fc] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-32 pt-4 sm:pt-6 md:pt-10">
     <section class="bg-transparent container mx-auto">
          <!-- header -->
-        <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3 sm:pb-5">
+        <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3">
             <section class="lg:hidden">
                 <div class="bg-[#9C0080]/10 w-full h-10 flex items-center justify-between rounded-lg py-2 sm:py-3 px-4 sm:px-6">
                     <div class="flex items-center gap-2 sm:gap-3 text-sm sm:text-xl">
@@ -54,7 +54,7 @@
                             <img class="flex" src="./src/img/logo.png" alt="">
                         </figure>
                         <div class="w-2/3 bg-white flex justify-between items-center p-3 pl-2 rounded-lg h-12">
-                            <input class="placeholder:text-[14px] w-full" type="text" placeholder="جستجو ...">
+                            <input data-header-search class="placeholder:text-[14px] w-full focus:outline-none text-[13px] font-semibold text-[#92A2C4]" type="text" placeholder="جستجو ...">
                             <span class="bg-gray-100 p-1.5 rounded-lg my-1 flex-shrink-0">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#181824" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full h-16 flex items-center justify-between mt-10">
+                <div class="w-full h-16 flex items-center justify-between mt-3">
                     <ul class="lg:w-4/5 h-full flex items-center gap-5 xl:gap-8 *:text-[13px] overflow-x-auto cursor-pointer">
                         <li id="desktop-categories-trigger" role="button" tabindex="0" class="flex items-center gap-4 bg-[#9C0080] text-white rounded-lg px-5 font-bold h-11 flex-shrink-0" aria-controls="desktop-mega-menu" aria-expanded="false">
                             <span>دسته بندی ها</span>
@@ -342,7 +342,7 @@
                             <div class="w-full h-full flex flex-col">
                                 <!-- Product -->
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
-                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <img src="./src/img/iphone17.png" class="w-32 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
 
                                     <h3 class="font-bold mt-8 px-1 text-[13px] text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
@@ -389,7 +389,7 @@
                             <div class="w-full h-full flex flex-col">
                                 <!-- Product -->
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
-                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <img src="./src/img/iphone17.png" class="w-32 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
 
                                     <h3 class="font-bold px-1 mt-8 text-[13px] text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
@@ -435,7 +435,7 @@
                             <div class="w-full h-full flex flex-col">
                                 <!-- Product -->
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-2 pt-5 lg:pt-0">
-                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto " alt="iPhone 17 Pro Max">
+                                    <img src="./src/img/iphone17.png" class="w-32 lg:w-40 object-contain mx-auto " alt="iPhone 17 Pro Max">
 
                                     <h3 class="font-bold px-1 mt-8 text-[13px] text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
@@ -484,55 +484,55 @@
         </section>
         <section class="w-full mt-4 sm:mt-5 lg:my-10 overflow-x-auto">
             <div class="flex gap-2 sm:gap-3 md:gap-4 justify-start md:justify-between min-w-max md:min-w-0">
-                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/mobile.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">موبایل</span>
                 </div>
-                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/tablt.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">تبلت</span>
                 </div>
-                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/laptop.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">لپ تاپ</span>
                 </div>
-                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/speaker.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[10.5px] font-bold w-full text-center">اسپیکرو ساندبار</span>
                 </div>
-                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/game.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">گیمینگ</span>
                 </div>
-                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/wtch.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">ساعت هوشمند</span>
                 </div>
-                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/head.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[10px] font-bold w-full text-center">هدفون وهدزفری</span>
                 </div>
-                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/electrice.png" alt="">
                     </span>
                     <span class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold w-full text-center">لوازم جانبی</span>
                 </div>
-                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-27 bg-[#EAEAF4] rounded-b-lg rounded-t-[50px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
+                <div class="flex w-21 h-24 sm:h-28 sm:w-24 lg:w-[115px] bg-[#EAEAF4] rounded-b-lg rounded-t-[60px] flex-col items-center gap-y-4 p-2 sm:p-3 overflow-hidden flex-shrink-0">
                     <span class="rounded-full bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
                         <img src="./src/img/homesmart.png" alt="">
                     </span>
@@ -561,15 +561,22 @@
                         </button>
                     </div>
                 </div>
-                <div class="swiper newSwiper w-full overflow-visible h-[250px] sm:h-[290px] lg:h-[350px]">
+                <div class="swiper newSwiper w-full overflow-visible h-[290px] lg:h-[360px]">
                     <div class="swiper-wrapper cursor-pointer">
                         <!-- slide 1 -->
                         <div class="swiper-slide">
-                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
+                            <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col group relative">
+                                <div dir="ltr" class="absolute top-3 left-3 z-20 h-10 w-10 bg-[#008EF9] rounded-lg overflow-hidden flex items-center justify-between transition-all duration-300 ease-out group-hover:w-[250px]">
+                                    <div class="shrink-0 w-10 h-10 flex items-center justify-center">
+                                        <img src="./src/img/snappay.png" alt="">
+                                    </div>
+                                    <span class="text-white text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100 pr-2">
+                                        !پرداخت در ۴ قسط با اسنپ‌پی
+                                    </span>
+                                </div>
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/iphone16.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/iphone16.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8  text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
@@ -607,20 +614,14 @@
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/watch.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/watch.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
                                 <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
                                     <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
                                         <div class="text-right">
-                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
-                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
-                                                    ۲۰%
-                                                </span>
-                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
-                                            </div>
                                             <p class="font-bold text-base lg:text-xl">
                                                 ۷۲,۱۹۹,۰۰۰
                                                 <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
@@ -646,35 +647,15 @@
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/tablet.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/tablet.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
                                 <div class="mt-4 sm:mt-6 mb-2 sm:mb-3 lg:mb-1 px-1 sm:px-2">
                                     <div class="flex justify-between items-center flex-wrap gap-1 sm:gap-2">
-                                        <div class="text-right">
-                                            <div class="flex items-center gap-1 sm:gap-2 justify-start">
-                                                <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
-                                                    ۲۰%
-                                                </span>
-                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
-                                            </div>
-                                            <p class="font-bold text-base lg:text-xl">
-                                                ۷۲,۱۹۹,۰۰۰
-                                                <span class="text-[8px] sm:text-[10px] lg:text-[14px] font-bold">تومان</span>
-                                            </p>
-                                        </div>
-                                        <div class="flex gap-1 sm:gap-2">
-                                            <button class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg bg-green-500 text-white hover:bg-green-600 transition flex items-center justify-center cursor-pointer">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M8.81 2L5.19 5.63" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M15.19 2L18.81 5.63" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="white" stroke-width="1.5"/>
-                                                <path d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                                </svg>
-                                            </button>
+                                        <div class="text-right text-[#92A2C4] text-sm">
+                                            ناموجود
                                         </div>
                                     </div>
                                 </div>
@@ -684,8 +665,8 @@
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/phone.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/phone.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
@@ -721,8 +702,8 @@
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/iphone17.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
@@ -758,8 +739,8 @@
                         <div class="swiper-slide">
                             <div class="bg-white shadow-xs shadow-gray-200 rounded-xl w-full h-full p-2 sm:p-3 lg:p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
-                                    <img src="./src/img/iphone17.png" class="w-20 sm:w-24 md:w-28 lg:w-32 object-contain mx-auto" alt="iPhone 17 Pro Max">
-                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 lg:mt-10 text-[13px] lg:text-right leading-relaxed line-clamp-2">
+                                    <img src="./src/img/iphone17.png" class="w-30 lg:w-40 object-contain mx-auto" alt="iPhone 17 Pro Max">
+                                    <h3 class="font-bold px-1 mt-6 sm:mt-8 text-[13px] lg:text-right leading-relaxed line-clamp-2">
                                         گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + ظرفیت ۲۵۶ گیگابایت و رم ۱۲ گیگابایت
                                     </h3>
                                 </div>
@@ -1108,13 +1089,13 @@
                             <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
                                     <div class="w-full flex">
-                                        <img src="./src/img/sam1.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <img src="./src/img/sam1.png" class="w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
                                         <div class="h-1/2 flex-col items-end gap-y-3">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
                                         </div>
                                     </div>
-                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                    <h3 class="truncate font-bold mt-6 sm:mt-8 lg:mt-10 text-xs lg:text-[13px] lg:text-right">
                                         گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
                                     </h3>
                                     <p class="text-[11px] mt-1 truncate lg:text-right">
@@ -1155,13 +1136,13 @@
                             <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
                                     <div class="w-full flex">
-                                        <img src="./src/img/sam2.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <img src="./src/img/sam2.png" class="w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
                                         <div class="h-1/2 flex-col items-end gap-y-3">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
                                         </div>
                                     </div>
-                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-xs lg:text-[13px] lg:text-right">
                                         گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
                                     </h3>
                                     <p class="text-[11px] mt-1 truncate lg:text-right">
@@ -1202,13 +1183,13 @@
                             <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
                                     <div class="w-full flex">
-                                        <img src="./src/img/sam3.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <img src="./src/img/sam3.png" class="w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
                                         <div class="h-1/2 flex-col items-end gap-y-3">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
                                         </div>
                                     </div>
-                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-xs lg:text-[13px] lg:text-right">
                                         گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
                                     </h3>
                                     <p class="text-[11px] mt-1 truncate lg:text-right">
@@ -1249,7 +1230,7 @@
                             <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
                                     <div class="w-full flex">
-                                        <img src="./src/img/iphone16.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <img src="./src/img/iphone16.png" class="w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
                                         <div class="h-1/2 flex-col items-end gap-y-3">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
@@ -1269,7 +1250,7 @@
                                                 <span class="bg-red-500 text-white rounded-full px-1 py-0.5 text-[10px] lg:text-xs font-bold">
                                                     ۲۰%
                                                 </span>
-                                                <del class="text-neutral-400 text-[10px] lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
+                                                <del class="text-neutral-400 text-xs lg:text-sm">۷۳,۰۰۰,۰۰۰</del>
                                             </div>
                                             <p class="font-bold text-base lg:text-xl">
                                                 ۷۲,۱۹۹,۰۰۰
@@ -1295,13 +1276,13 @@
                             <div class="bg-white border border-neutral-200 rounded-xl w-full h-full p-4 flex flex-col">
                                 <div class="flex-1 flex flex-col justify-center mb-2 lg:mb-0 px-1 sm:px-2 pt-2 sm:pt-3">
                                     <div class="w-full flex">
-                                        <img src="./src/img/iphone17.png" class="w-24 md:w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
+                                        <img src="./src/img/iphone17.png" class="w-28 lg:w-40 object-contain mx-auto h-full" alt="iPhone 17 Pro Max">
                                         <div class="h-1/2 flex-col items-end gap-y-3">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 border-4 border-gray-200 rounded-lg" src="./src/img/adapture.png" alt="">
                                             <img class="w-10 h-10 lg:w-14 lg:h-14 bg-gray-200 rounded-lg p-1 mt-2" src="./src/img/ghab.png" alt="">
                                         </div>
                                     </div>
-                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-[10px] lg:text-[13px] lg:text-right">
+                                    <h3 class="font-bold mt-6 sm:mt-8 lg:mt-10 text-xs lg:text-[13px] lg:text-right">
                                         گوشی موبایل سامسونگ مدل Galaxy S26 Ultra 
                                     </h3>
                                     <p class="text-[11px] mt-1 truncate lg:text-right">

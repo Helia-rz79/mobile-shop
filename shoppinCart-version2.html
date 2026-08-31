@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
     <body x-data="shopApp">
-        <main class="w-full min-h-screen bg-[#f7f7fc] max-[820px]:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10">
+        <main class="w-full min-h-screen bg-[#f7f7fc] max-[820px]:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-32 pt-4 sm:pt-6 md:pt-10">
             <section class="bg-transparent container mx-auto">
                 <!-- header -->
-                <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3 sm:pb-5">
+                <header class="relative w-full min-h-32 border-b-2 border-neutral-300 pb-3">
                     <section class="lg:hidden">
                         <div class="bg-[#9C0080]/10 w-full h-10 flex items-center justify-between rounded-lg py-2 sm:py-3 px-4 sm:px-6">
                             <div class="flex items-center gap-2 sm:gap-3 text-sm sm:text-xl">
@@ -59,7 +59,7 @@
                                     <img class="flex" src="./src/img/logo.png" alt="">
                                 </figure>
                                 <div class="w-2/3 bg-white flex justify-between items-center p-3 pl-2 rounded-lg h-12">
-                                    <input class="placeholder:text-[14px] w-full" type="text" placeholder="جستجو ...">
+                                    <input data-header-search class="placeholder:text-[14px] w-full focus:outline-none text-[13px] font-semibold text-[#92A2C4]" type="text" placeholder="جستجو ...">
                                     <span class="bg-gray-100 p-1.5 rounded-lg my-1 flex-shrink-0">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#181824" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full h-16 flex items-center justify-between mt-10">
+                        <div class="w-full h-16 flex items-center justify-between mt-3">
                             <ul class="lg:w-4/5 h-full flex items-center gap-5 xl:gap-8 *:text-[13px] overflow-x-auto cursor-pointer">
                                 <li id="desktop-categories-trigger" role="button" tabindex="0" class="flex items-center gap-4 bg-[#9C0080] text-white rounded-lg px-5 font-bold h-11 flex-shrink-0" aria-controls="desktop-mega-menu" aria-expanded="false">
                                     <span>دسته بندی ها</span>
@@ -297,8 +297,8 @@
                     </aside>
                 </div>
                 <!-- body -->
-                <section class="pt-3.5 pb-15 min-[821px]:pt-5" aria-label="مقایسه گوشی موبایل">
-                    <nav class="mb-3.5 flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:mb-5.5 min-[521px]:h-13.5" aria-label="مسیر صفحه">
+                <section class="pt-4 pb-15" aria-label="مقایسه گوشی موبایل">
+                    <nav class="mb-4 flex h-11.5 items-center gap-2 rounded-[10px] bg-[#E2E3EE] px-4.5 text-[13px] text-[#92A2C4] min-[521px]:h-13.5" aria-label="مسیر صفحه">
                         <span aria-hidden="true">
                             <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 16.5v-2.75M9.23 2.585 2.879 7.673c-.715.568-1.173 1.769-1.017 2.667l1.219 7.297c.22 1.301 1.467 2.355 2.787 2.355h10.266c1.311 0 2.567-1.063 2.787-2.355l1.22-7.297c.146-.898-.313-2.1-1.018-2.667L12.77 2.594c-.98-.788-2.567-.788-3.538-.009" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -445,39 +445,39 @@
                             <!-- ================= CART SUMMARY ================= -->
                             <aside class="col-span-1 space-y-4 lg:col-span-3 lg:sticky lg:top-5 lg:self-start">
                                 <!-- Discount code -->
-                                <article class="rounded-[22px] bg-white p-5">
-                                    <div class="flex items-center justify-between gap-3">
+                                <article class="rounded-[18px] bg-white p-5">
+                                    <button type="button" class="cart-accordion-toggle flex w-full items-center justify-between gap-3 text-right" aria-expanded="false" aria-controls="discount-code-panel">
                                         <h3 class="flex items-center gap-2 text-sm font-bold text-[#20212A]">
-                                            <svg width="18" height="15" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.75 6.25c0-2.593 0-3.89.805-4.695C2.361.75 3.657.75 6.25.75h7.333c2.593 0 3.89 0 4.695.805.805.806.805 2.102.805 4.695v3.667c0 2.592 0 3.889-.805 4.694-.806.806-2.102.806-4.695.806H6.25c-2.593 0-3.89 0-4.695-.806C.75 13.806.75 12.51.75 9.917z" stroke="#92a2c4" stroke-width="1.5"/><path d="M9.917.75v14.667M.75 9h18.333" stroke="#92a2c4" stroke-width="1.5"/></svg>
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.75 6.25c0-2.593 0-3.89.805-4.695C2.361.75 3.657.75 6.25.75h7.333c2.593 0 3.89 0 4.695.805.805.806.805 2.102.805 4.695v3.667c0 2.592 0 3.889-.805 4.694-.806.806-2.102.806-4.695.806H6.25c-2.593 0-3.89 0-4.695-.806C.75 13.806.75 12.51.75 9.917z" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.417 6.162c0-4.165 5.5.079 5.5 2.838H6.709C5.117 9 4.417 7.597 4.417 6.162m11 0c0-4.165-5.5.079-5.5 2.838h3.208c1.592 0 2.292-1.403 2.292-2.838M9.917.75v14.667M.75 9h18.333m-6.416 2.75L9.917 9l-2.75 2.75" stroke="#92a2c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                             کد تخفیف یا کارت هدیه دارید؟
                                         </h3>
-                                        <svg class="size-4 shrink-0 text-[#30313A]" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <svg class="cart-accordion-arrow size-4 shrink-0 text-[#30313A] transition-transform duration-200" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                             <path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                    </div>
-                                    <div class="mt-5 flex h-11 overflow-hidden rounded-xl border border-[#D9DDE8] focus-within:border-[#9C0080]">
+                                    </button>
+                                    <div id="discount-code-panel" class="mt-5 hidden flex h-11 overflow-hidden rounded-xl border border-[#D9DDE8] focus-within:border-[#9C0080]">
                                         <input type="text" placeholder="کد تخفیف یا کارت هدیه خود را وارد کنید" class="min-w-0 flex-1 px-3 text-[11px] outline-none placeholder:text-[#92A2C4]">
                                         <button class="shrink-0 rounded-xl border border-[#C800A1] px-4 text-xs font-medium text-[#9C0080]">اعمال کد</button>
                                     </div>
                                 </article>
 
                                 <!-- Order description -->
-                                <article class="rounded-[22px] bg-white p-5">
-                                    <div class="flex items-center justify-between gap-3">
+                                <article class="rounded-[18px] bg-white p-5">
+                                    <button type="button" class="cart-accordion-toggle flex w-full items-center justify-between gap-3 text-right" aria-expanded="false" aria-controls="order-description-panel">
                                         <h3 class="flex items-center gap-2 text-sm font-bold text-[#20212A]">
                                             <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h8M5 9h8M5 13h5" stroke="#92A2C4" stroke-width="1.5" stroke-linecap="round"/><rect x=".75" y=".75" width="16.5" height="18.5" rx="2.25" stroke="#92A2C4" stroke-width="1.5"/></svg>
                                             توضیحات سفارش
                                         </h3>
-                                        <svg class="size-4 shrink-0 text-[#30313A]" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <svg class="cart-accordion-arrow size-4 shrink-0 text-[#30313A] transition-transform duration-200" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                             <path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                    </div>
-                                    <textarea class="mt-4 h-20 w-full resize-none rounded-xl bg-[#F5F4FC] p-3 text-xs leading-6 outline-none placeholder:text-[#92A2C4]" placeholder="توضیحات خود را اینجا بنویسید..."></textarea>
+                                    </button>
+                                    <textarea id="order-description-panel" class="mt-4 hidden h-20 w-full resize-none rounded-xl bg-[#F5F4FC] p-3 text-xs leading-6 outline-none placeholder:text-[#92A2C4]" placeholder="توضیحات خود را اینجا بنویسید..."></textarea>
                                 </article>
 
                                 <div class="overflow-hidden rounded-[30px] bg-white lg:rounded-2xl">
                                     <!-- Summary -->
-                                    <div class="px-7 py-8 lg:p-5 xl:p-8">
+                                    <div class="px-7 py-8 lg:px-4 lg:py-5 xl:px-6 xl:py-8">
                                         <h2 class="hidden lg:block text-lg font-bold text-[#20212A] mb-6">
                                             سبد خرید
                                         </h2>
@@ -512,7 +512,7 @@
                                                     هزینه ارسال
                                                 </span>
 
-                                                <span class="text-[#92A2C4]">
+                                                <span class="text-[#92A2C4] lg:text-[10px]">
                                                     ماهکس (پس کرایه - به عهده مشتری)
                                                 </span>
                                             </div>
@@ -533,7 +533,7 @@
                                         </div>
                                     </div>
                                     <!-- Checkout -->
-                                    <button class="hidden h-[55px] w-full items-center justify-between bg-[#00C853] px-6 text-sm font-bold text-white lg:flex xl:text-base">
+                                    <button class="hidden h-[55px] w-full cursor-pointer items-center justify-between bg-[#00C853] px-6 text-sm font-bold text-white transition-colors duration-200 hover:bg-[#9C0080] lg:flex xl:text-base">
                                         <span>
                                             ثبت سفارش و پرداخت نهایی
                                         </span>
@@ -541,7 +541,7 @@
                                     </button>
                                 </div>
 
-                                <button class="fixed inset-x-4 bottom-4 z-50 flex h-16 items-center justify-between rounded-2xl bg-[#00C853] px-7 text-sm font-bold text-white shadow-lg lg:hidden">
+                                <button class="fixed inset-x-4 bottom-4 z-50 flex h-16 cursor-pointer items-center justify-between rounded-2xl bg-[#00C853] px-7 text-sm font-bold text-white shadow-lg transition-colors duration-500 hover:bg-[#9C0080] lg:hidden">
                                     <span>
                                         ثبت سفارش و پرداخت نهایی
                                     </span>
@@ -582,7 +582,7 @@
             </section>
         </main>
         <!-- footer -->
-        <section class="w-full bg-[#E2E3EE] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 pt-4 sm:pt-6 md:pt-10 pb-4">
+        <section class="w-full bg-[#E2E3EE] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-32 pt-4 sm:pt-6 md:pt-10 pb-4">
             <div class="bg-transparent container mx-auto mt-10">
                 <!-- section1 -->
                 <div class="border-b-2 border-gray-300 w-full my-7 pt-7 pb-4 flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-between">
